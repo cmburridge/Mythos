@@ -4,23 +4,9 @@ using UnityEngine;
 
 public class DragDrop : MonoBehaviour
 {
-    private bool isDragging;
-
-    public void OnMouseDown()
+    void OnMouseDrag()
     {
-        isDragging = true;
-    }
-
-    public void OnMouseUp()
-    {
-        isDragging = false;
-    }
-
-    void Update()
-    {
-        if (isDragging) {
-            Vector2 mousePosition = Camera.main.ScreenToViewportPoint(Input.mousePosition) - transform.position;
-            transform.Translate(mousePosition);
-        }
+        Vector2 mousePosition = Camera.main.ScreenToViewportPoint(Input.mousePosition) - transform.position;
+        transform.Translate(mousePosition);
     }
 }
