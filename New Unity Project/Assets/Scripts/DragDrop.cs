@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DragDrop : MonoBehaviour
 {
-    void OnMouseDrag()
+    public void OnMouseDrag()
     {
-        Vector2 mousePosition = Camera.main.ScreenToViewportPoint(Input.mousePosition) - transform.position;
-        transform.Translate(mousePosition);
+		
+        transform.Translate(Vector3.right*Input.GetAxis("Mouse X"));
     }
 }
