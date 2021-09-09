@@ -11,7 +11,9 @@ public class DragDrop : MonoBehaviour
     private Vector3 newPosition;
     private Camera cam;
     public Vector3Data positionData;
+    public Vector3Data scaleData;
     public Vector3 newScale;
+    public GameObject moveCheck;
 
     public bool CanDrag { get; set; }
     public UnityEvent OnDrag;
@@ -26,11 +28,14 @@ public class DragDrop : MonoBehaviour
     
     public IEnumerator OnMouseDown()
     {
+        scaleData.value = transform.localScale;
+        
+        
         OnDrag.Invoke();
-        positionData.value = transform.position;
         offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
         yield return new WaitForFixedUpdate();
         CanDrag = true;
+        positionData.value = transform.position;
         while (CanDrag)
         {
             yield return new WaitForFixedUpdate();
@@ -40,10 +45,12 @@ public class DragDrop : MonoBehaviour
         }
     }
     
-    private void OnMouseUp()
+    private IEnumerator OnMouseUp()
     {
-        transform.position = positionData.value;
         CanDrag = false;
+        yield return new WaitForFixedUpdate();
+        transform.position = positionData.value;
+        transform.localScale = scaleData.value;
         if (Draggable)
         {
             OnUp.Invoke();
