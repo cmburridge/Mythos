@@ -11,8 +11,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HexCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObj/Vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObj/MythosData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DragDrop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptableObj/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xNc7MyjDD5KB6TDmHT0iscglyP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,6 +65,7 @@
       <workItem from="1630271607119" duration="2663000" />
       <workItem from="1630426087095" duration="6275000" />
       <workItem from="1631034109602" duration="9036000" />
+      <workItem from="1631201087205" duration="6536000" />
     </task>
     <servers />
   </component>
