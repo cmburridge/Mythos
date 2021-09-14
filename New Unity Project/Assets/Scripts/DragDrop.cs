@@ -29,8 +29,7 @@ public class DragDrop : MonoBehaviour
     public IEnumerator OnMouseDown()
     {
         scaleData.value = transform.localScale;
-        
-        
+
         OnDrag.Invoke();
         offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
         yield return new WaitForFixedUpdate();
@@ -42,6 +41,7 @@ public class DragDrop : MonoBehaviour
             newPosition = cam.ScreenToWorldPoint(Input.mousePosition) + offsetPosition;
             transform.position = newPosition;
             transform.localScale = newScale;
+            moveCheck.transform.position = positionData.value;
         }
     }
     
@@ -50,6 +50,7 @@ public class DragDrop : MonoBehaviour
         CanDrag = false;
         yield return new WaitForFixedUpdate();
         transform.position = positionData.value;
+        moveCheck.transform.position = gameObject.transform.position;
         transform.localScale = scaleData.value;
         if (Draggable)
         {
