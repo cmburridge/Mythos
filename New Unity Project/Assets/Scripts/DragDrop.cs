@@ -11,6 +11,7 @@ public class DragDrop : MonoBehaviour
     private Vector3 newPosition;
     private Camera cam;
     public Vector3Data positionData;
+    public Vector3Data movePositionData;
     public Vector3Data scaleData;
     public Vector3 newScale;
     public GameObject moveCheck;
@@ -28,6 +29,7 @@ public class DragDrop : MonoBehaviour
     
     public IEnumerator OnMouseDown()
     {
+        movePositionData.value = moveCheck.transform.position;
         scaleData.value = transform.localScale;
 
         OnDrag.Invoke();
@@ -41,7 +43,8 @@ public class DragDrop : MonoBehaviour
             newPosition = cam.ScreenToWorldPoint(Input.mousePosition) + offsetPosition;
             transform.position = newPosition;
             transform.localScale = newScale;
-            moveCheck.transform.position = positionData.value;
+            moveCheck.SetActive(true);
+            moveCheck.transform.position = movePositionData.value;
         }
     }
     
@@ -50,7 +53,8 @@ public class DragDrop : MonoBehaviour
         CanDrag = false;
         yield return new WaitForFixedUpdate();
         transform.position = positionData.value;
-        moveCheck.transform.position = gameObject.transform.position;
+        moveCheck.SetActive(false);
+        moveCheck.transform.position = movePositionData.value;
         transform.localScale = scaleData.value;
         if (Draggable)
         {
