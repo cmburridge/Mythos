@@ -16,7 +16,9 @@ public class DragDrop : MonoBehaviour
     public Vector3Data scaleData;
     public Vector3 newScale;
     public GameObject moveCheck;
-
+    public GameObject movePosition;
+    public Vector3Data newSpace;
+    
     public bool CanDrag { get; set; }
     public UnityEvent OnDrag;
     public UnityEvent OnUp;
@@ -45,6 +47,7 @@ public class DragDrop : MonoBehaviour
             transform.position = newPosition;
             transform.localScale = newScale;
             moveCheck.SetActive(true);
+            movePosition.SetActive(true);
             moveCheck.transform.position = movePositionData.value;
         }
     }
@@ -55,12 +58,18 @@ public class DragDrop : MonoBehaviour
         yield return new WaitForFixedUpdate();
         transform.position = positionData.value;
         moveCheck.SetActive(false);
+        movePosition.SetActive(false);
         moveCheck.transform.position = movePositionData.value;
         transform.localScale = scaleData.value;
         if (Draggable)
         {
             OnUp.Invoke();
         }
+    }
+
+    public void Move()
+    {
+        transform.position = newSpace.value;
     }
 }
 

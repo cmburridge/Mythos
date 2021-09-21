@@ -7,6 +7,7 @@ TagManager:
   - Spaces
   - MoveCheck
   - occupiedSpace
+  - Location
   layers:
   - Default
   - TransparentFX

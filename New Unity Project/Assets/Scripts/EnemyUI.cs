@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 public class EnemyUI : MonoBehaviour
 {
-    private bool selected = false;
     public Sprite icon;
     public Sprite menu;
     public SpriteRenderer enemyIcon;
