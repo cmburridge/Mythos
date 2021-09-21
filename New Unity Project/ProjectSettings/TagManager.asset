@@ -19,8 +19,8 @@ TagManager:
   - Board
   - Spaces
   - MoveCheck
-  - 
-  - 
+  - Locations
+  - MovePosition
   - 
   - 
   - 
