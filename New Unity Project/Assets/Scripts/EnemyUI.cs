@@ -12,24 +12,12 @@ public class EnemyUI : MonoBehaviour
     public SpriteRenderer enemyIcon;
     public SpriteRenderer enemyMenu;
     public GameObject target;
-
-    private void Start()
-    {
-        selected = false;
-    }
+    
 
     private void OnMouseDown()
     {
         target.SetActive(true);
-        selected = true;
-    }
-
-    private void Update()
-    {
-        if (selected == true)
-        {
-            enemyIcon.sprite = icon ;
-            enemyMenu.sprite = menu ;
-        }
+        enemyIcon.sprite = icon ;
+        enemyMenu.sprite = menu ;
     }
 }

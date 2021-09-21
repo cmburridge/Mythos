@@ -6,17 +6,15 @@ using UnityEngine;
 public class SpaceBehavior : MonoBehaviour
 {
     private Vector3 spaceLocation;
-    public GameObject artObj;
-    public SpriteRenderer objSprite;
+    public GameObject openSpace;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        artObj.SetActive(true);
-        objSprite.color = Color.black;
+        openSpace.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        artObj.SetActive(false);
+        openSpace.SetActive(false);
     }
 }
