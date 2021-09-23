@@ -21,8 +21,8 @@ TagManager:
   - MoveCheck
   - Locations
   - MovePosition
-  - 
-  - 
+  - FullSpace
+  - SpaceFill
   - 
   - 
   - 
