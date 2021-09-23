@@ -3,17 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveBehavior : MonoBehaviour
+public class SpriteBehavior : MonoBehaviour
 {
-    public Vector3Data position;
-    public Vector3Data originalPosition;
+    public SpriteRenderer ren;
+    public Sprite newSprite;
+    public Sprite ogSprite;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        position.value = other.transform.position;
+        ren.sprite = newSprite;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        //position.value = originalPosition.value;
+        ren.sprite = ogSprite;
     }
 }
