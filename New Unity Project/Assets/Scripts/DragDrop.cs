@@ -21,8 +21,12 @@ public class DragDrop : MonoBehaviour
     
     public GameObject moveCheck;
     public GameObject movePosition;
-    public GameObject undoButton;
-    public GameObject buttons;
+    //public GameObject undoButton;
+    //public GameObject buttons;
+
+    public Collectable thisMythos;
+
+    public ObjectData obj;
 
     public bool CanDrag { get; set; }
     public UnityEvent OnDrag;
@@ -33,12 +37,14 @@ public class DragDrop : MonoBehaviour
     {
         cam = Camera.main;
         Draggable = true;
+        obj.data = null;
     }
     
     public IEnumerator OnMouseDown()
     {
         movePositionData.value = moveCheck.transform.position;
         scaleData.value = transform.localScale;
+        obj.data = this.gameObject;
 
         OnDrag.Invoke();
         offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
@@ -53,7 +59,7 @@ public class DragDrop : MonoBehaviour
             transform.localScale = newScale;
             moveCheck.SetActive(true);
             movePosition.SetActive(true);
-            undoButton.SetActive(true);
+            //undoButton.SetActive(true);
             moveCheck.transform.position = movePositionData.value;
         }
     }
@@ -82,7 +88,7 @@ public class DragDrop : MonoBehaviour
     public void Undo()
     {
         transform.position = undoPosition.value;
-        undoButton.SetActive(false);
+        //undoButton.SetActive(false);
     }
 }
 

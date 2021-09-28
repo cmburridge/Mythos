@@ -9,14 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc5b307e0aa517b4eb9e437f4ec621a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
   m_Name: Devouworm
   m_EditorClassIdentifier: 
+  collected: 0
+  character: {fileID: 933365836150009216, guid: 9b3157b553b85ab4daa3cc68de3da4e4, type: 3}
   mythosName: Devouworm
   hp: 3
   speed: 2
   power: 11
-  defense: 6
-  ability: 
-  biome: Desert
-  moveType: Normal
+  defense: 8

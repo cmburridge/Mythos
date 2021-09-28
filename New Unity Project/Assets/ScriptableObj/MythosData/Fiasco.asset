@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
-  m_Name: Hyemire
+  m_Name: Fiasco
   m_EditorClassIdentifier: 
   collected: 0
-  character: {fileID: 9219200436343119643, guid: dba2db372e4d87a42a20eb0d54c29a2d, type: 3}
-  mythosName: Hyemire
-  hp: 4
-  speed: 1
-  power: 13
-  defense: 6
+  character: {fileID: 0}
+  mythosName: 
+  hp: 0
+  speed: 0
+  power: 0
+  defense: 0

@@ -11,12 +11,19 @@ public class EnemyUI : MonoBehaviour
     public SpriteRenderer enemyIcon;
     public SpriteRenderer enemyMenu;
     public GameObject target;
-    
+    public ObjectData obj;
+    public Collectable thisMythos;
+
+    private void Start()
+    {
+        obj.data = null;
+    }
 
     private void OnMouseDown()
     {
         target.SetActive(true);
         enemyIcon.sprite = icon ;
         enemyMenu.sprite = menu ;
+        obj.data = this.gameObject;
     }
 }

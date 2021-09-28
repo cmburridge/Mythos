@@ -6,6 +6,10 @@ using UnityEngine;
 public class Collectable : ScriptableObject
 {
     public bool collected;
-    public int costValue;
     public GameObject character;
+    public string mythosName;
+    public float hp;
+    public float speed;
+    public float power;
+    public float defense;
 }
