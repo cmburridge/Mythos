@@ -661,7 +661,6 @@ MonoBehaviour:
   enemyIcon: {fileID: 505181351}
   enemyMenu: {fileID: 1508594795}
   target: {fileID: 1421933355}
-  obj: {fileID: 11400000, guid: 2c4394d5b03f9d846a1d2dfda9915165, type: 2}
   thisMythos: {fileID: 11400000, guid: 1cb2c8be7de715b4790b71d0fb9f49fb, type: 2}
 --- !u!1 &51066881
 GameObject:
@@ -853,8 +852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e7ed734cec31d4eb4912c1c4979eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
-  team: {fileID: 11400000, guid: c904647001b7a7d40b3fd8bdfa084423, type: 2}
+  target: {fileID: 11400000, guid: 7987dcfe95b97db468811c6caedb3570, type: 2}
+  team: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
+  randomValue: 0
 --- !u!1 &64918422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,7 +3569,6 @@ MonoBehaviour:
   enemyIcon: {fileID: 505181351}
   enemyMenu: {fileID: 1508594795}
   target: {fileID: 1421933355}
-  obj: {fileID: 11400000, guid: 2c4394d5b03f9d846a1d2dfda9915165, type: 2}
   thisMythos: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
 --- !u!1 &578457987
 GameObject:

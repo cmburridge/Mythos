@@ -189,13 +189,10 @@ MonoBehaviour:
   movePositionData: {fileID: 11400000, guid: 94e060ad6aa049a4f9c70f7e034c099a, type: 2}
   scaleData: {fileID: 11400000, guid: f8bf01d9dbfb9dc449f89f1e56a67200, type: 2}
   newSpace: {fileID: 11400000, guid: 6d324e423eb883542ba80f26bfcee3d7, type: 2}
-  undoPosition: {fileID: 11400000, guid: a93c1dbc7aa6e884488ba78a9d4c8c14, type: 2}
   moveCheck: {fileID: 1730149615101325845}
   movePosition: {fileID: 1730149615158559314}
-  undoButton: {fileID: 0}
-  buttons: {fileID: 0}
   thisMythos: {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
-  obj: {fileID: 11400000, guid: 439cacf16299f0b40b361c4128974b2b, type: 2}
+  teamate: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
   OnDrag:
     m_PersistentCalls:
       m_Calls: []
