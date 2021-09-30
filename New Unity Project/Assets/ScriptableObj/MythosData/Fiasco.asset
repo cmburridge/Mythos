@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collected: 0
   character: {fileID: 0}
-  mythosName: 
-  hp: 0
-  speed: 0
-  power: 0
-  defense: 0
+  mythosName: Fiasco
+  hp: 3
+  speed: 2
+  power: 10
+  defense: 6

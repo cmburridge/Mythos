@@ -12,11 +12,14 @@ public class EnemyUI : MonoBehaviour
     public SpriteRenderer enemyMenu;
     public GameObject target;
     public Collectable thisMythos;
+    public Collectable targetMythos;
 
     
 
     private void OnMouseDown()
     {
+        targetMythos.power = thisMythos.power;
+        targetMythos.defense = thisMythos.defense;
         target.SetActive(true);
         enemyIcon.sprite = icon ;
         enemyMenu.sprite = menu ;
