@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collected: 0
   character: {fileID: 469019903705758882, guid: dfc63664ec3fab340961e5e14f40a81b, type: 3}
-  characterSelect: {fileID: 455855414107492227, guid: f5ebee070c1bfca43aa9471a5de6b39c, type: 3}
+  characterSelect: {fileID: 6188386820322542666, guid: f5ebee070c1bfca43aa9471a5de6b39c, type: 3}
   mythosName: Akontista
   hp: 3
   speed: 2

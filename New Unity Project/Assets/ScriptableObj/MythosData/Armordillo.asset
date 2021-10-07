@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collected: 0
   character: {fileID: 5313559619743480092, guid: 6745e5b4169155845b8340f352925aa7, type: 3}
-  characterSelect: {fileID: 2519791084302849957, guid: 70290c29b201c164daa7f14476c0f7d1, type: 3}
+  characterSelect: {fileID: 7934089603914672207, guid: 70290c29b201c164daa7f14476c0f7d1, type: 3}
   mythosName: Armordillo
   hp: 0
   speed: 2
