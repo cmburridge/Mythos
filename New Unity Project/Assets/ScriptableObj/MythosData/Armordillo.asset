@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
-  m_Name: Akon
+  m_Name: Armordillo
   m_EditorClassIdentifier: 
   collected: 0
-  character: {fileID: 469019903705758882, guid: dfc63664ec3fab340961e5e14f40a81b, type: 3}
-  characterSelect: {fileID: 455855414107492227, guid: f5ebee070c1bfca43aa9471a5de6b39c, type: 3}
-  mythosName: Akontista
-  hp: 3
+  character: {fileID: 5313559619743480092, guid: 6745e5b4169155845b8340f352925aa7, type: 3}
+  characterSelect: {fileID: 2519791084302849957, guid: 70290c29b201c164daa7f14476c0f7d1, type: 3}
+  mythosName: Armordillo
+  hp: 0
   speed: 2
-  power: 10
-  defense: 8
+  power: 9
+  defense: 10

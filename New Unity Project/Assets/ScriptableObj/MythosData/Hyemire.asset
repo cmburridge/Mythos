@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collected: 0
   character: {fileID: 9219200436343119643, guid: dba2db372e4d87a42a20eb0d54c29a2d, type: 3}
+  characterSelect: {fileID: 631518067149906813, guid: bf0f9a99a08d6eb46b119562f44fc0a8, type: 3}
   mythosName: Hyemire
   hp: 4
   speed: 1

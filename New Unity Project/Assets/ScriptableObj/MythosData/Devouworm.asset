@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collected: 0
   character: {fileID: 933365836150009216, guid: 9b3157b553b85ab4daa3cc68de3da4e4, type: 3}
+  characterSelect: {fileID: 8156160008681555097, guid: a23b7bc64ae7f7141a897f331c71898b, type: 3}
   mythosName: Devouworm
   hp: 3
   speed: 2
