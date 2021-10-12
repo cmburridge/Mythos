@@ -9,29 +9,64 @@ using Random = UnityEngine.Random;
 public class InstantiateBehavior : MonoBehaviour
 {
     public Collectable collectableObj;
+    public Collectable collectableObj2;
     public Collections collectionFull;
     public Collections collectionTeam;
     public int listValue;
     public int value1;
     public int value2;
-    public Vector3 thisPosition;
+    public GameObject obj1Position;
+    public GameObject obj2Position;
+    
     private void Start()
     {
-        value1 = Random.Range(0, collectionFull.collection.Count);
-        thisPosition.x = this.transform.position.x;
-        thisPosition.y = this.transform.position.y;
-        collectableObj = collectionFull.collection[value1];
         Spawn();
     }
 
     public void Spawn()
     {
-        Instantiate(collectableObj.characterSelect,thisPosition,Quaternion.identity);
+        value1 = Random.Range(0, collectionFull.collection.Count);
+        collectableObj = collectionFull.collection[value1];
+        if (collectionTeam.collection.Contains(collectableObj))
+        {
+            Spawn();
+        }
+        else
+        {
+            Instantiate(collectableObj.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
+            collectableObj2 = collectableObj;
+            Spawn2();
+        }
+    }
+
+    public void Spawn2()
+    {
+        value2 = Random.Range(0, collectionFull.collection.Count);
+        if (value2 != value1)
+        {
+            collectableObj = collectionFull.collection[value2];
+            if (collectionTeam.collection.Contains(collectableObj))
+            {
+                Spawn2();
+            }
+            else
+            {
+                Instantiate(collectableObj.characterSelect, obj2Position.transform.position, Quaternion.identity,obj2Position.transform);   
+            }
+        }
+        else
+        {
+            Spawn2();
+        }
     }
 
     public void Add()
     {
-        Debug.Log("Works");
-        //collectionTeam.collection.Add(collectableObj);
+        collectionTeam.collection.Add(collectableObj2);
+    }
+    
+    public void Add2()
+    {
+        collectionTeam.collection.Add(collectableObj);
     }
 }
