@@ -12,14 +12,15 @@ public class InstantiateBehavior : MonoBehaviour
     public Collections collectionFull;
     public Collections collectionTeam;
     public int listValue;
-    public int randomValue;
+    public int value1;
+    public int value2;
     public Vector3 thisPosition;
     private void Start()
     {
-        randomValue = Random.Range(0, collectionFull.collection.Count);
+        value1 = Random.Range(0, collectionFull.collection.Count);
         thisPosition.x = this.transform.position.x;
         thisPosition.y = this.transform.position.y;
-        collectableObj = collectionFull.collection[randomValue];
+        collectableObj = collectionFull.collection[value1];
         Spawn();
     }
 
