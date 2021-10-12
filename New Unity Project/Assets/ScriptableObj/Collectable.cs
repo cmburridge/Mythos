@@ -5,9 +5,12 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Collectable : ScriptableObject
 {
+    public bool onScreen;
     public bool collected;
     public GameObject character;
     public GameObject characterSelect;
+    public Sprite charSprite;
+    public Sprite charMenu;
     public string mythosName;
     public float hp;
     public float speed;

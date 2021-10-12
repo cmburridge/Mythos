@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -9,15 +10,13 @@ using Random = UnityEngine.Random;
 public class InstantiateBehavior : MonoBehaviour
 {
     public Collectable collectableObj;
-    public Collectable collectableObj2;
     public Collections collectionFull;
     public Collections collectionTeam;
-    public int listValue;
-    public int value1;
-    public int value2;
+    public int value;
+    public int size;
     public GameObject obj1Position;
     public GameObject obj2Position;
-    
+
     private void Start()
     {
         Spawn();
@@ -25,48 +24,25 @@ public class InstantiateBehavior : MonoBehaviour
 
     public void Spawn()
     {
-        value1 = Random.Range(0, collectionFull.collection.Count);
-        collectableObj = collectionFull.collection[value1];
-        if (collectionTeam.collection.Contains(collectableObj))
+        value = Random.Range(0, collectionFull.collection.Count);
+        size = collectionFull.collection.Count;
+
+        for (int i = value; i < size; i++)
         {
-            Spawn();
-        }
-        else
-        {
-            Instantiate(collectableObj.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
-            collectableObj2 = collectableObj;
-            Spawn2();
+            collectableObj = collectionFull.collection[value];
+            if (collectableObj.collected == false)
+            {
+                Instantiate(collectableObj.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
+                collectableObj.onScreen = true;
+            }
         }
     }
 
-    public void Spawn2()
+    public void Option1()
     {
-        value2 = Random.Range(0, collectionFull.collection.Count);
-        if (value2 != value1)
-        {
-            collectableObj = collectionFull.collection[value2];
-            if (collectionTeam.collection.Contains(collectableObj))
-            {
-                Spawn2();
-            }
-            else
-            {
-                Instantiate(collectableObj.characterSelect, obj2Position.transform.position, Quaternion.identity,obj2Position.transform);   
-            }
-        }
-        else
-        {
-            Spawn2();
-        }
-    }
-
-    public void Add()
-    {
-        collectionTeam.collection.Add(collectableObj2);
-    }
-    
-    public void Add2()
-    {
+        collectableObj.onScreen = false;
+        collectableObj.collected = true;
         collectionTeam.collection.Add(collectableObj);
     }
+    
 }

@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
   m_Name: Armordillo
   m_EditorClassIdentifier: 
+  onScreen: 0
   collected: 0
   character: {fileID: 5313559619743480092, guid: 6745e5b4169155845b8340f352925aa7, type: 3}
   characterSelect: {fileID: 7934089603914672207, guid: 70290c29b201c164daa7f14476c0f7d1, type: 3}
+  charSprite: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
+  charMenu: {fileID: 21300000, guid: f5b61e949f462fc4e8eefb2fd4bae5cf, type: 3}
   mythosName: Armordillo
-  hp: 0
+  hp: 4
   speed: 2
   power: 9
   defense: 10
