@@ -9,7 +9,8 @@ using Random = UnityEngine.Random;
 
 public class InstantiateBehavior : MonoBehaviour
 {
-    public Collectable collectableObj;
+    public Collectable collectableObj1;
+    public Collectable collectableObj2;
     public Collections collectionFull;
     public Collections collectionTeam;
     public int value;
@@ -22,27 +23,44 @@ public class InstantiateBehavior : MonoBehaviour
         Spawn();
     }
 
-    public void Spawn()
+    private void Spawn()
     {
         value = Random.Range(0, collectionFull.collection.Count);
         size = collectionFull.collection.Count;
 
-        for (int i = value; i < size; i++)
+        for (var i = value; i < size; i++)
         {
-            collectableObj = collectionFull.collection[value];
-            if (collectableObj.collected == false)
+            collectableObj1 = collectionFull.collection[value];
+            if (collectableObj1.collected == false)
             {
-                Instantiate(collectableObj.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
-                collectableObj.onScreen = true;
+                Instantiate(collectableObj1.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
+                collectableObj1.onScreen = true;
+            }
+        }
+        collectableObj2 = collectableObj1;
+        Spawn2();
+    }
+
+    private void Spawn2()
+    {
+        value = Random.Range(0, collectionFull.collection.Count);
+        size = collectionFull.collection.Count;
+
+        for (var i = value; i < size; i++)
+        {
+            collectableObj1 = collectionFull.collection[value];
+            if (collectableObj1.collected == false & collectableObj1.onScreen == false)
+            {
+                Instantiate(collectableObj1.characterSelect, obj2Position.transform.position, Quaternion.identity, obj2Position.transform);
             }
         }
     }
 
+
     public void Option1()
     {
-        collectableObj.onScreen = false;
-        collectableObj.collected = true;
-        collectionTeam.collection.Add(collectableObj);
+        collectableObj1.onScreen = false;
+        collectableObj1.collected = true;
+        collectionTeam.collection.Add(collectableObj1);
     }
-    
 }
