@@ -59,7 +59,14 @@ public class InstantiateBehavior : MonoBehaviour
 
     public void Option1()
     {
-        collectableObj1.onScreen = false;
+        collectableObj2.onScreen = false;
+        collectableObj2.collected = true;
+        collectionTeam.collection.Add(collectableObj2);
+    }
+    
+    public void Option2()
+    {
+        collectableObj2.onScreen = false;
         collectableObj1.collected = true;
         collectionTeam.collection.Add(collectableObj1);
     }
