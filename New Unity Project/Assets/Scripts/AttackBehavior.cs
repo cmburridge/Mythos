@@ -8,7 +8,11 @@ public class AttackBehavior : MonoBehaviour
 {
     public Collectable target;
     public Collectable team;
+    public Camera cam;
+    public Vector3 location;
     public int randomValue;
+    public GameObject teamSpawn;
+    public GameObject targetSpawn;
 
     private void Start()
     {
@@ -20,7 +24,9 @@ public class AttackBehavior : MonoBehaviour
 
     public void AttackSequence()
     {
-        
+        cam.transform.position = location;
+        Instantiate(team.characterFight, teamSpawn.transform.position, Quaternion.identity, teamSpawn.transform);
+        Instantiate(target.characterFight, targetSpawn.transform.position, Quaternion.identity, targetSpawn.transform);
     }
 
     public void Roll()

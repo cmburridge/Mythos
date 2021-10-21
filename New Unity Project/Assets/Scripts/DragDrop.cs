@@ -45,6 +45,7 @@ public class DragDrop : MonoBehaviour
         {
             movePositionData.value = moveCheck.transform.position;
             scaleData.value = transform.localScale;
+            teamate.characterFight = thisMythos.characterFight;
             teamate.power = thisMythos.power;
             teamate.defense = thisMythos.defense;
         

@@ -18,6 +18,7 @@ public class EnemyUI : MonoBehaviour
 
     private void OnMouseDown()
     {
+        targetMythos.characterFight = thisMythos.characterFight;
         targetMythos.power = thisMythos.power;
         targetMythos.defense = thisMythos.defense;
         target.SetActive(true);

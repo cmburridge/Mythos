@@ -9,6 +9,7 @@ public class SpawnChar : MonoBehaviour
     public Collections collectionTeam;
     public SpriteRenderer menu;
     public SpriteRenderer icon;
+    public Vector3 location;
     public int listValue;
 
     public void Spawn()
@@ -20,6 +21,7 @@ public class SpawnChar : MonoBehaviour
     public void Icons()
     {
         menu.sprite = collectableObj.charMenu;
+        Instantiate(collectableObj.characterDetails, location, Quaternion.identity, menu.gameObject.transform);
         icon.sprite = collectableObj.charSprite;
     }
 }

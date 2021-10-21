@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Armordillo
   m_EditorClassIdentifier: 
   onScreen: 0
-  collected: 0
+  collected: 1
   character: {fileID: 5313559619743480092, guid: 6745e5b4169155845b8340f352925aa7, type: 3}
   characterSelect: {fileID: 7934089603914672207, guid: 70290c29b201c164daa7f14476c0f7d1, type: 3}
+  characterDetails: {fileID: 6263913084762738049, guid: 1ebba3d22de77e94fab83183899abcba, type: 3}
+  characterFight: {fileID: 8450418245409105179, guid: f4b614245cff0e94fbb1e1b9483c2deb, type: 3}
   charSprite: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
   charMenu: {fileID: 21300000, guid: f5b61e949f462fc4e8eefb2fd4bae5cf, type: 3}
   mythosName: Armordillo

@@ -9,6 +9,8 @@ public class Collectable : ScriptableObject
     public bool collected;
     public GameObject character;
     public GameObject characterSelect;
+    public GameObject characterDetails;
+    public GameObject characterFight;
     public Sprite charSprite;
     public Sprite charMenu;
     public string mythosName;

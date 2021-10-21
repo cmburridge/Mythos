@@ -6,13 +6,19 @@ public class OpenMenu : MonoBehaviour
 {
     public GameObject menu;
 
-    public void menuSelect()
+    public void MenuSelect()
     {
         menu.SetActive(true);
     }
 
-    public void closeMenu()
+    public void CloseMenu()
     {
         menu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
     }
 }

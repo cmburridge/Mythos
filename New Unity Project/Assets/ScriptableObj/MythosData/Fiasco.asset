@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
   m_Name: Fiasco
   m_EditorClassIdentifier: 
+  onScreen: 0
   collected: 0
   character: {fileID: 0}
+  characterSelect: {fileID: 0}
+  characterDetails: {fileID: 0}
+  characterFight: {fileID: 7412361428379261922, guid: ef54559be749c9c4bb664df30b15e5da, type: 3}
+  charSprite: {fileID: 0}
+  charMenu: {fileID: 0}
   mythosName: Fiasco
   hp: 3
   speed: 2
