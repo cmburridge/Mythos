@@ -82,6 +82,8 @@ MonoBehaviour:
   movePosition: {fileID: 469019903799208978}
   thisMythos: {fileID: 11400000, guid: 61aa588fbc916e8449d52814e4012a17, type: 2}
   teamate: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
+  movement: 0
+  canMove: 1
   OnDrag:
     m_PersistentCalls:
       m_Calls: []
@@ -624,14 +626,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469019905206056907}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.12912783, y: 1.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469019905081905486}
   m_Father: {fileID: 469019903705758911}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &469019905206056905
 Animator:
   serializedVersion: 3

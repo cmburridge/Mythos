@@ -93,14 +93,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2302158614327409195}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9219200436664580244}
   m_Father: {fileID: 9219200436343119622}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2302158614327409207
 Animator:
   serializedVersion: 3
@@ -239,7 +239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9219200436343119643}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.22, y: -12.86, z: -0.04000002}
   m_LocalScale: {x: 0.8066599, y: 0.8066599, z: 0.8066599}
   m_Children:
@@ -296,6 +296,8 @@ MonoBehaviour:
   movePosition: {fileID: 2302158614362689386}
   thisMythos: {fileID: 11400000, guid: c904647001b7a7d40b3fd8bdfa084423, type: 2}
   teamate: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
+  movement: 0
+  canMove: 1
   OnDrag:
     m_PersistentCalls:
       m_Calls: []
