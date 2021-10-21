@@ -13,6 +13,7 @@ public class AttackBehavior : MonoBehaviour
     public int randomValue;
     public GameObject teamSpawn;
     public GameObject targetSpawn;
+    public SpriteRenderer background;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class AttackBehavior : MonoBehaviour
 
     public void AttackSequence()
     {
+        background.sprite = team.biome;
         cam.transform.position = location;
         Instantiate(team.characterFight, teamSpawn.transform.position, Quaternion.identity, teamSpawn.transform);
         Instantiate(target.characterFight, targetSpawn.transform.position, Quaternion.identity, targetSpawn.transform);

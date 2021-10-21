@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
   m_Name: Sherm
   m_EditorClassIdentifier: 
+  onScreen: 0
   collected: 0
   character: {fileID: 0}
+  characterSelect: {fileID: 0}
+  characterDetails: {fileID: 0}
+  characterFight: {fileID: 6093512848704731278, guid: 5ea87f96a67c9084bb1d93cd287f321c, type: 3}
+  charSprite: {fileID: 0}
+  charMenu: {fileID: 0}
   mythosName: Sherm
   hp: 2
   speed: 1

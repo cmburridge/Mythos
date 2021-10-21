@@ -13,6 +13,7 @@ public class Collectable : ScriptableObject
     public GameObject characterFight;
     public Sprite charSprite;
     public Sprite charMenu;
+    public Sprite biome;
     public string mythosName;
     public float hp;
     public float speed;
