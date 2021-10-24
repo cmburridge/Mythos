@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 933365836150009278}
   - component: {fileID: 933365836150009245}
   - component: {fileID: 933365836150009247}
+  - component: {fileID: 9085020038991342428}
   m_Layer: 0
   m_Name: Devouworm
   m_TagString: Untagged
@@ -162,7 +163,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933365836150009216}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6, y: -8.2, z: 0}
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
@@ -193,6 +194,8 @@ MonoBehaviour:
   movePosition: {fileID: 1730149615158559314}
   thisMythos: {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
   teamate: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
+  movement: 0
+  canMove: 1
   OnDrag:
     m_PersistentCalls:
       m_Calls: []
@@ -237,6 +240,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.862324, y: 19.323559}
   m_EdgeRadius: 0
+--- !u!114 &9085020038991342428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933365836150009216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7057eb791b1cd2b4fbad7c45e7d77203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
 --- !u!1 &933365836598216227
 GameObject:
   m_ObjectHideFlags: 0

@@ -79,6 +79,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2302158614327409206}
   - component: {fileID: 2302158614327409207}
+  - component: {fileID: 7708785011818188649}
   m_Layer: 0
   m_Name: Art
   m_TagString: Untagged
@@ -120,6 +121,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7708785011818188649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302158614327409195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7057eb791b1cd2b4fbad7c45e7d77203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: c904647001b7a7d40b3fd8bdfa084423, type: 2}
 --- !u!1 &2302158614362689386
 GameObject:
   m_ObjectHideFlags: 0
