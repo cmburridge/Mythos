@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Akon
   m_EditorClassIdentifier: 
   onScreen: 0
-  collected: 0
+  collected: 1
   character: {fileID: 469019903705758882, guid: dfc63664ec3fab340961e5e14f40a81b, type: 3}
   characterSelect: {fileID: 6188386820322542666, guid: f5ebee070c1bfca43aa9471a5de6b39c, type: 3}
   characterDetails: {fileID: 8443573521434007458, guid: 08607afe9f86e6a4eabbbc1d3a303e76, type: 3}

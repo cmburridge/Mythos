@@ -20,7 +20,7 @@ MonoBehaviour:
   characterFight: {fileID: 7412361428379261922, guid: ef54559be749c9c4bb664df30b15e5da, type: 3}
   charSprite: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
   charMenu: {fileID: 21300000, guid: f1a2a686a25f8064c918b160ff2cbcde, type: 3}
-  biome: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}
+  biome: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
   attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
   mythosName: Devouworm
   hp: 3
