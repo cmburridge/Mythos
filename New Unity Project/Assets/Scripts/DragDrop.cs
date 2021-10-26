@@ -48,6 +48,9 @@ public class DragDrop : MonoBehaviour
             teamate.characterFight = thisMythos.characterFight;
             teamate.power = thisMythos.power;
             teamate.defense = thisMythos.defense;
+            teamate.biome = thisMythos.biome;
+            teamate.attackIcon = thisMythos.attackIcon;
+            teamate.charSprite = thisMythos.charSprite;
         
             OnDrag.Invoke();
             offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
@@ -89,6 +92,8 @@ public class DragDrop : MonoBehaviour
             }   
         }
 
+        teamate.biome = thisMythos.biome;
+        
         //if (movement == 0)
         //{
             //canMove = false;

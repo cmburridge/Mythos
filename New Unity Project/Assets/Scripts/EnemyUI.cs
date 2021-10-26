@@ -24,5 +24,6 @@ public class EnemyUI : MonoBehaviour
         target.SetActive(true);
         enemyIcon.sprite = icon ;
         enemyMenu.sprite = menu ;
+        targetMythos.charSprite = thisMythos.charSprite;
     }
 }

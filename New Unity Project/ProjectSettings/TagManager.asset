@@ -8,6 +8,11 @@ TagManager:
   - MoveCheck
   - occupiedSpace
   - Location
+  - Desert
+  - Glacial
+  - Darklands
+  - Mountain
+  - Woodlands
   layers:
   - Default
   - TransparentFX
@@ -25,7 +30,7 @@ TagManager:
   - SpaceFill
   - Desert
   - DesertCheck
-  - 
+  - Labeler
   - 
   - 
   - 

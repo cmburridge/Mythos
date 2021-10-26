@@ -18,8 +18,10 @@ MonoBehaviour:
   characterSelect: {fileID: 0}
   characterDetails: {fileID: 0}
   characterFight: {fileID: 8586710166490657698, guid: 8fb602c0a1752ce45b771080e7e67779, type: 3}
-  charSprite: {fileID: 0}
-  charMenu: {fileID: 0}
+  charSprite: {fileID: 21300000, guid: 13752b4f6d7d35544b1ccee6cfdd42cb, type: 3}
+  charMenu: {fileID: 21300000, guid: 164d8d923a44396438eb3268f5574fc5, type: 3}
+  biome: {fileID: 0}
+  attackIcon: {fileID: 0}
   mythosName: Fiasco
   hp: 3
   speed: 2
