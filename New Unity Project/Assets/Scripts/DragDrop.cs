@@ -51,6 +51,7 @@ public class DragDrop : MonoBehaviour
             teamate.biome = thisMythos.biome;
             teamate.attackIcon = thisMythos.attackIcon;
             teamate.charSprite = thisMythos.charSprite;
+            teamate.special = thisMythos.special;
         
             OnDrag.Invoke();
             offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);

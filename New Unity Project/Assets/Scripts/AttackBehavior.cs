@@ -13,11 +13,20 @@ public class AttackBehavior : MonoBehaviour
     public GameObject teamSpawn;
     public GameObject targetSpawn;
 
-    public SpriteRenderer background;
+    public GameObject background;
+    public GameObject transition;
 
-    public void AttackSequence()
+
+    public void StartAttack()
     {
-        cam.transform.position = location;
+        StartCoroutine(AttackSequence());
+    }
+
+    private IEnumerator AttackSequence()
+    {
+        Instantiate(transition, background.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(1);
+        background.SetActive(true);
         Instantiate(team.characterFight, teamSpawn.transform.position, Quaternion.identity, teamSpawn.transform);
         Instantiate(target.characterFight, targetSpawn.transform.position, Quaternion.identity, targetSpawn.transform);
     }

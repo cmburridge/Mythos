@@ -20,4 +20,5 @@ public class Collectable : ScriptableObject
     public float speed;
     public float power;
     public float defense;
+    public GameObject special;
 }

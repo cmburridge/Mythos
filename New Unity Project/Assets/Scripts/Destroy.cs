@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    public float time = 10;
+    public float time = 5;
     
     private void Start()
     {
@@ -14,7 +14,7 @@ public class Destroy : MonoBehaviour
 
     private IEnumerator DestroyThis()
     {
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSecondsRealtime(time);
         Debug.Log("destroyed");
         Destroy(this.gameObject);
     }
