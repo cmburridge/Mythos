@@ -2219,6 +2219,8 @@ MonoBehaviour:
   size: 0
   obj1Position: {fileID: 36473021}
   obj2Position: {fileID: 1191501374}
+  transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
+  background: {fileID: 1715520386}
 --- !u!1 &239406062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,7 +2987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.97, y: -8.44}
+  m_AnchoredPosition: {x: 3.97, y: -12.35}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &346985096
@@ -9549,20 +9551,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 220838655}
         m_TargetAssemblyTypeName: InstantiateBehavior, Assembly-CSharp
-        m_MethodName: Option1
+        m_MethodName: SelectedFirst
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1715520386}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11258,20 +11248,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 220838655}
         m_TargetAssemblyTypeName: InstantiateBehavior, Assembly-CSharp
-        m_MethodName: Option2
+        m_MethodName: SelectedFirst
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1715520386}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11302,7 +11280,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1142786090}
         m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
@@ -11314,7 +11292,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 63649891}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -14419,7 +14397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -14.14}
+  m_AnchoredPosition: {x: 0, y: -6.81}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1747377008
@@ -14836,6 +14814,7 @@ Transform:
   - {fileID: 1929843003}
   - {fileID: 346985095}
   - {fileID: 1747377007}
+  - {fileID: 2010832437}
   m_Father: {fileID: 727780314}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14934,6 +14913,8 @@ MonoBehaviour:
   diceVal: {fileID: 2133783765}
   targetSpawn: {fileID: 286930726}
   defend: {fileID: 2393117156223916361, guid: e2ac9c2a45ddb7e489694d40e90c3df4, type: 3}
+  transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
+  defendHolder: {fileID: 2010832436}
 --- !u!1 &1835596899
 GameObject:
   m_ObjectHideFlags: 0
@@ -15570,7 +15551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.8199997, y: -8.44}
+  m_AnchoredPosition: {x: -3.8199997, y: -12.35}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929843004
@@ -16137,6 +16118,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &2010832436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010832437}
+  - component: {fileID: 2010832438}
+  m_Layer: 0
+  m_Name: Defend
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2010832437
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010832436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.70124, y: 0.70124, z: 1.7531}
+  m_Children: []
+  m_Father: {fileID: 1829694702}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.36, y: 0.02}
+  m_SizeDelta: {x: 53.4518, y: 46.7981}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2010832438
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010832436}
+  m_CullTransparentMesh: 1
 --- !u!1 &2053884221
 GameObject:
   m_ObjectHideFlags: 0

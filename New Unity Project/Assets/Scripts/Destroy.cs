@@ -15,7 +15,6 @@ public class Destroy : MonoBehaviour
     private IEnumerator DestroyThis()
     {
         yield return new WaitForSecondsRealtime(time);
-        Debug.Log("destroyed");
         Destroy(this.gameObject);
     }
 }

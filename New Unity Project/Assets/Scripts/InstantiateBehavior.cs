@@ -17,6 +17,8 @@ public class InstantiateBehavior : MonoBehaviour
     public int size;
     public GameObject obj1Position;
     public GameObject obj2Position;
+    public GameObject transition;
+    public GameObject background;
 
     private void Start()
     {
@@ -56,18 +58,33 @@ public class InstantiateBehavior : MonoBehaviour
         }
     }
 
-
-    public void Option1()
+    public void SelectedFirst()
     {
-        collectableObj2.onScreen = false;
-        collectableObj2.collected = true;
-        collectionTeam.collection.Add(collectableObj2);
+        StartCoroutine(Option1());
     }
     
-    public void Option2()
+    public void SelectedSecond()
     {
+        StartCoroutine(Option2());
+    }
+
+    public IEnumerator Option1()
+    {
+        Instantiate(transition, background.transform.position, Quaternion.identity);
+        collectionTeam.collection.Add(collectableObj2);
+        collectableObj2.onScreen = false;
+        collectableObj2.collected = true;
+        yield return new WaitForSecondsRealtime(1);
+        background.SetActive(false);
+    }
+    
+    public IEnumerator Option2()
+    {
+        Instantiate(transition, background.transform.position, Quaternion.identity);
+        collectionTeam.collection.Add(collectableObj1);
         collectableObj2.onScreen = false;
         collectableObj1.collected = true;
-        collectionTeam.collection.Add(collectableObj1);
+        yield return new WaitForSecondsRealtime(1);
+        background.SetActive(false);
     }
 }

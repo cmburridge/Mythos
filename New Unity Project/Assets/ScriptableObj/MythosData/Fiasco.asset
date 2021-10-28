@@ -27,3 +27,4 @@ MonoBehaviour:
   speed: 2
   power: 10
   defense: 6
+  special: {fileID: 0}

@@ -26,9 +26,12 @@ public class BiomeChoose : MonoBehaviour
     public Text diceVal;
     public GameObject targetSpawn;
     public GameObject defend;
+    public GameObject transition;
+    public GameObject defendHolder;
 
     public void OnEnable()
     {
+        diceVal.text = "0";
         thisRen.sprite = teamMythos.biome;
         teamRen.sprite = teamMythos.attackIcon;
         enemyRen.sprite = targetMythos.attackIcon;
@@ -51,8 +54,10 @@ public class BiomeChoose : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSecondsRealtime(2);
+            yield return new WaitForSecondsRealtime(4);
             Debug.Log("miss");
+            Instantiate(transition, attackScene.transform.position, Quaternion.identity);
+            yield return new WaitForSecondsRealtime(1);
             attackScene.SetActive(false);
             buttons.SetActive(true);
         }
@@ -65,17 +70,21 @@ public class BiomeChoose : MonoBehaviour
         diceVal.text = randomValue.ToString();
         if (randomValue <= target.defense)
         {
-            Instantiate(defend, targetSpawn.transform.position, Quaternion.identity, targetSpawn.transform);
-            yield return new WaitForSecondsRealtime(3);
+            Instantiate(defend, targetSpawn.transform.position, Quaternion.identity, defendHolder.transform );
+            yield return new WaitForSecondsRealtime(2);
             Debug.Log("block");
+            Instantiate(transition, attackScene.transform.position, Quaternion.identity);
+            yield return new WaitForSecondsRealtime(1);
             attackScene.SetActive(false);
             buttons.SetActive(true);
         }
         else
         {
             Instantiate(team.special, targetSpawn.transform.position, Quaternion.identity, targetSpawn.transform);
-            yield return new WaitForSecondsRealtime(3);
+            yield return new WaitForSecondsRealtime(2);
             Debug.Log("damaged");
+            Instantiate(transition, attackScene.transform.position, Quaternion.identity);
+            yield return new WaitForSecondsRealtime(1);
             attackScene.SetActive(false);
             buttons.SetActive(true);
         }
