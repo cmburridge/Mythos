@@ -33,11 +33,8 @@ public class InstantiateBehavior : MonoBehaviour
         for (var i = value; i < size; i++)
         {
             collectableObj1 = collectionFull.collection[value];
-            if (collectableObj1.collected == false)
-            {
-                Instantiate(collectableObj1.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
-                collectableObj1.onScreen = true;
-            }
+            Instantiate(collectableObj1.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
+            collectableObj1.onScreen = true;
         }
         collectableObj2 = collectableObj1;
         Spawn2();
@@ -46,14 +43,14 @@ public class InstantiateBehavior : MonoBehaviour
     private void Spawn2()
     {
         value = Random.Range(0, collectionFull.collection.Count);
-        size = collectionFull.collection.Count;
-
-        for (var i = value; i < size; i++)
         {
-            collectableObj1 = collectionFull.collection[value];
-            if (collectableObj1.collected == false & collectableObj1.onScreen == false)
+            for (var i = value; i < size; i++)
             {
-                Instantiate(collectableObj1.characterSelect, obj2Position.transform.position, Quaternion.identity, obj2Position.transform);
+                if (collectionFull.collection[value].onScreen == false)
+                {
+                    collectableObj1 = collectionFull.collection[value];
+                    Instantiate(collectableObj1.characterSelect, obj2Position.transform.position, Quaternion.identity, obj2Position.transform);
+                }
             }
         }
     }
@@ -72,6 +69,7 @@ public class InstantiateBehavior : MonoBehaviour
     {
         Instantiate(transition, background.transform.position, Quaternion.identity);
         collectionTeam.collection.Add(collectableObj2);
+        collectionFull.collection.Remove(collectableObj2);
         collectableObj2.onScreen = false;
         collectableObj2.collected = true;
         yield return new WaitForSecondsRealtime(1);
@@ -82,6 +80,7 @@ public class InstantiateBehavior : MonoBehaviour
     {
         Instantiate(transition, background.transform.position, Quaternion.identity);
         collectionTeam.collection.Add(collectableObj1);
+        collectionFull.collection.Remove(collectableObj1);
         collectableObj2.onScreen = false;
         collectableObj1.collected = true;
         yield return new WaitForSecondsRealtime(1);

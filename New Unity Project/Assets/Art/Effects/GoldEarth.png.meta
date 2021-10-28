@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 237adad4696e0b84e94bccce6b1c24cf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7779094173619530632
+    second: GoldEarth_0
+  - first:
+      213: 3363092032007904406
+    second: GoldEarth_1
+  - first:
+      213: 6984737043645650844
+    second: GoldEarth_2
+  - first:
+      213: -6334534281305065048
+    second: GoldEarth_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +125,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GoldEarth_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b27ec7fe4e4fb60800000000000000
+      internalID: 7779094173619530632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldEarth_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c17ca726a1cae20800000000000000
+      internalID: 3363092032007904406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldEarth_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97d200a555cee060800000000000000
+      internalID: 6984737043645650844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldEarth_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9f64902a63718a0800000000000000
+      internalID: -6334534281305065048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 092f7cc6bde55604880456604763c984
     internalID: 0
     vertices: []
     indices: 

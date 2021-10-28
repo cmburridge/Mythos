@@ -17,12 +17,14 @@ MonoBehaviour:
   character: {fileID: 0}
   characterSelect: {fileID: 0}
   characterDetails: {fileID: 0}
-  characterFight: {fileID: 7412361428379261922, guid: ef54559be749c9c4bb664df30b15e5da, type: 3}
-  charSprite: {fileID: 0}
+  characterFight: {fileID: 8450418245409105179, guid: f4b614245cff0e94fbb1e1b9483c2deb, type: 3}
+  charSprite: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
   charMenu: {fileID: 0}
-  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
+  biome: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}
+  attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
   mythosName: 
   hp: 0
   speed: 0
-  power: 0
-  defense: 0
+  power: 9
+  defense: 10
+  special: {fileID: 846616514319486446, guid: b6837986fee3f5c4f943317992142a7f, type: 3}
