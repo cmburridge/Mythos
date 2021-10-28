@@ -19,6 +19,7 @@ public class InstantiateBehavior : MonoBehaviour
     public GameObject obj2Position;
     public GameObject transition;
     public GameObject background;
+    public new AudioSource audio;
 
     private void Start()
     {
@@ -74,6 +75,7 @@ public class InstantiateBehavior : MonoBehaviour
         collectableObj2.collected = true;
         yield return new WaitForSecondsRealtime(1);
         background.SetActive(false);
+        audio.Play();
     }
     
     public IEnumerator Option2()
@@ -85,5 +87,6 @@ public class InstantiateBehavior : MonoBehaviour
         collectableObj1.collected = true;
         yield return new WaitForSecondsRealtime(1);
         background.SetActive(false);
+        audio.Play();
     }
 }

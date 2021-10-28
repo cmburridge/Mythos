@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 15dac32c396d961429c6770e49739727
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -974205209513160221
+    second: YellowJolt_0
+  - first:
+      213: -5605412593597804037
+    second: YellowJolt_1
+  - first:
+      213: 3154085399060709054
+    second: YellowJolt_2
+  - first:
+      213: -8470229799940957579
+    second: YellowJolt_3
+  - first:
+      213: 364318118933226066
+    second: YellowJolt_4
+  - first:
+      213: -3050205558225469820
+    second: YellowJolt_5
+  - first:
+      213: 7844529909767850450
+    second: YellowJolt_6
+  - first:
+      213: -7882507132501937971
+    second: YellowJolt_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +137,179 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: YellowJolt_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 7
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e112a4068dea72f0800000000000000
+      internalID: -974205209513160221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowJolt_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf11a13e1f29532b0800000000000000
+      internalID: -5605412593597804037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowJolt_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 11
+        width: 9
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe724a95ff85cb20800000000000000
+      internalID: 3154085399060709054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowJolt_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a5798cfd2b37a80800000000000000
+      internalID: -8470229799940957579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowJolt_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 5
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e04026615e0500800000000000000
+      internalID: 364318118933226066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowJolt_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e7c0a943e7ba5d0800000000000000
+      internalID: -3050205558225469820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowJolt_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 14
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9c3ad046e5ddc60800000000000000
+      internalID: 7844529909767850450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowJolt_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc03dbbb685bb9290800000000000000
+      internalID: -7882507132501937971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cb326bc9a7227ff419fab7dbfffc99e8
     internalID: 0
     vertices: []
     indices: 

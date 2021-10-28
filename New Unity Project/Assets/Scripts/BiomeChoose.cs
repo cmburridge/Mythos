@@ -28,6 +28,7 @@ public class BiomeChoose : MonoBehaviour
     public GameObject defend;
     public GameObject transition;
     public GameObject defendHolder;
+    public new AudioSource audio;
 
     public void OnEnable()
     {
@@ -46,6 +47,7 @@ public class BiomeChoose : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3);
         randomValue = Random.Range(1, 20);
+        audio.Play();
         diceVal.text = randomValue.ToString();
         if (randomValue <= team.power)
         {
@@ -67,10 +69,11 @@ public class BiomeChoose : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         randomValue = Random.Range(1, 20);
+        audio.Play();
         diceVal.text = randomValue.ToString();
         if (randomValue <= target.defense)
         {
-            Instantiate(defend, targetSpawn.transform.position, Quaternion.identity, defendHolder.transform );
+            Instantiate(defend, defendHolder.transform.position, Quaternion.identity, defendHolder.transform );
             yield return new WaitForSecondsRealtime(2);
             Debug.Log("block");
             Instantiate(transition, attackScene.transform.position, Quaternion.identity);
@@ -80,7 +83,7 @@ public class BiomeChoose : MonoBehaviour
         }
         else
         {
-            Instantiate(team.special, targetSpawn.transform.position, Quaternion.identity, targetSpawn.transform);
+            Instantiate(team.special, defendHolder.transform.position, Quaternion.identity, targetSpawn.transform);
             yield return new WaitForSecondsRealtime(2);
             Debug.Log("damaged");
             Instantiate(transition, attackScene.transform.position, Quaternion.identity);

@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: eccfb08ef22edf14cae7f0bace18c48f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4029121466946121969
+    second: YellowMist_0
+  - first:
+      213: 2463605918122737233
+    second: YellowMist_1
+  - first:
+      213: 2439164284799464312
+    second: YellowMist_2
+  - first:
+      213: -3655700529518992125
+    second: YellowMist_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +125,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: YellowMist_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 5
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f86cd7f5fa518c0800000000000000
+      internalID: -4029121466946121969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowMist_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 6
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e7140a78c703220800000000000000
+      internalID: 2463605918122737233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowMist_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 5
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873ba486ef6a9d120800000000000000
+      internalID: 2439164284799464312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowMist_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 5
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30520d4bcb7544dc0800000000000000
+      internalID: -3655700529518992125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 30107db2f23d97c4d97f6e5d731a825f
     internalID: 0
     vertices: []
     indices: 
