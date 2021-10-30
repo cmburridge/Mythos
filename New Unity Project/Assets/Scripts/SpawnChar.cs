@@ -15,7 +15,8 @@ public class SpawnChar : MonoBehaviour
     public void Spawn()
     {
         collectableObj = collectionTeam.collection[listValue];
-        Instantiate(collectableObj.character, this.transform.position, Quaternion.identity);
+        var transform1 = this.transform;
+        Instantiate(collectableObj.character, transform1.position, Quaternion.identity, transform1);
     }
 
     public void Icons()

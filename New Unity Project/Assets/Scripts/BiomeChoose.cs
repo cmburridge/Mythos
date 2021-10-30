@@ -10,25 +10,33 @@ public class BiomeChoose : MonoBehaviour
 {
     public Collectable teamMythos;
     public Collectable targetMythos;
+    public Collectable target;
+    public Collectable team;
+    
     public SpriteRenderer thisRen;
     public Image teamRen;
     public Image enemyRen;
-    public Text teamNum;
-    public Text enemyNum;
     public SpriteRenderer teamIcon;
     public SpriteRenderer enemyIcon;
-    public Collectable target;
-    public Collectable team;
+    
     public int randomValue;
+    
+    public Vector3 location;
+    
+    public Text teamNum;
+    public Text enemyNum;
+    public Text diceVal;
+    
+    public new AudioSource audio;
+    public AudioClip miss;
+    
     public GameObject attackScene;
     public GameObject buttons;
-    public Vector3 location;
-    public Text diceVal;
     public GameObject targetSpawn;
     public GameObject defend;
     public GameObject transition;
     public GameObject defendHolder;
-    public new AudioSource audio;
+    public GameObject teamGroup;
 
     public void OnEnable()
     {
@@ -56,12 +64,15 @@ public class BiomeChoose : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSecondsRealtime(4);
+            yield return new WaitForSecondsRealtime(1);
+            audio.PlayOneShot(miss, 1);
+            yield return new WaitForSecondsRealtime(3);
             Debug.Log("miss");
             Instantiate(transition, attackScene.transform.position, Quaternion.identity);
             yield return new WaitForSecondsRealtime(1);
-            attackScene.SetActive(false);
             buttons.SetActive(true);
+            teamGroup.SetActive(true);
+            attackScene.SetActive(false);
         }
     }
 
@@ -73,23 +84,27 @@ public class BiomeChoose : MonoBehaviour
         diceVal.text = randomValue.ToString();
         if (randomValue <= target.defense)
         {
+            yield return new WaitForSecondsRealtime(1);
             Instantiate(defend, defendHolder.transform.position, Quaternion.identity, defendHolder.transform );
-            yield return new WaitForSecondsRealtime(2);
+            yield return new WaitForSecondsRealtime(1);
             Debug.Log("block");
             Instantiate(transition, attackScene.transform.position, Quaternion.identity);
             yield return new WaitForSecondsRealtime(1);
-            attackScene.SetActive(false);
             buttons.SetActive(true);
+            teamGroup.SetActive(true);
+            attackScene.SetActive(false);
         }
         else
         {
+            yield return new WaitForSecondsRealtime(1);
             Instantiate(team.special, defendHolder.transform.position, Quaternion.identity, targetSpawn.transform);
-            yield return new WaitForSecondsRealtime(2);
+            yield return new WaitForSecondsRealtime(1);
             Debug.Log("damaged");
             Instantiate(transition, attackScene.transform.position, Quaternion.identity);
             yield return new WaitForSecondsRealtime(1);
-            attackScene.SetActive(false);
             buttons.SetActive(true);
+            teamGroup.SetActive(true);
+            attackScene.SetActive(false);
         }
     }
 }

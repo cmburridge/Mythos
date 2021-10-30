@@ -5892,6 +5892,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2034878246}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &664532618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6258,7 +6270,7 @@ RectTransform:
   - {fileID: 2066709179}
   - {fileID: 1829694702}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6701,6 +6713,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7962,9 +7986,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c2527a00c9b412a4188cbf4d449a1f3e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 06652e45815ad3949b120a9ac12d1a34, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.809
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9588,12 +9612,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142786089}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.5, y: -12.86, z: -0.04000002}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.8078437, y: -11.163418, z: 0.22653455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 2034878247}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157139733
 GameObject:
@@ -11290,7 +11314,7 @@ Transform:
   - {fileID: 543700637}
   - {fileID: 1508594797}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403034679
 GameObject:
@@ -12056,7 +12080,7 @@ RectTransform:
   m_LocalScale: {x: 0.04736049, y: 0.04736049, z: 0.04736049}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15158,25 +15182,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamMythos: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
   targetMythos: {fileID: 11400000, guid: 7987dcfe95b97db468811c6caedb3570, type: 2}
+  target: {fileID: 11400000, guid: 7987dcfe95b97db468811c6caedb3570, type: 2}
+  team: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
   thisRen: {fileID: 1829694704}
   teamRen: {fileID: 1929843004}
   enemyRen: {fileID: 346985096}
-  teamNum: {fileID: 1406906556}
-  enemyNum: {fileID: 907692878}
   teamIcon: {fileID: 1970439873}
   enemyIcon: {fileID: 1542269838}
-  target: {fileID: 11400000, guid: 7987dcfe95b97db468811c6caedb3570, type: 2}
-  team: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
   randomValue: 0
+  location: {x: -0.1, y: 0, z: -59.5}
+  teamNum: {fileID: 1406906556}
+  enemyNum: {fileID: 907692878}
+  diceVal: {fileID: 2133783765}
+  audio: {fileID: 952310895}
+  miss: {fileID: 8300000, guid: 902c6c12cb642d54bb52ca41bd7ab406, type: 3}
   attackScene: {fileID: 1829694701}
   buttons: {fileID: 2066709178}
-  location: {x: -0.1, y: 0, z: -59.5}
-  diceVal: {fileID: 2133783765}
   targetSpawn: {fileID: 286930726}
   defend: {fileID: 2393117156223916361, guid: e2ac9c2a45ddb7e489694d40e90c3df4, type: 3}
   transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
   defendHolder: {fileID: 2010832436}
-  audio: {fileID: 952310895}
+  teamGroup: {fileID: 2034878246}
 --- !u!1 &1835596899
 GameObject:
   m_ObjectHideFlags: 0
@@ -16424,6 +16450,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010832436}
   m_CullTransparentMesh: 1
+--- !u!1 &2034878246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034878247}
+  m_Layer: 0
+  m_Name: TeamGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034878247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034878246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6921562, y: -1.6965814, z: -0.26653457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1142786091}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053884221
 GameObject:
   m_ObjectHideFlags: 0
@@ -17466,7 +17523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5562731902223824763, guid: 245dd0fc49e39594d8d4f580fc12a4a7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5562731902223824763, guid: 245dd0fc49e39594d8d4f580fc12a4a7, type: 3}
       propertyPath: m_LocalPosition.x
