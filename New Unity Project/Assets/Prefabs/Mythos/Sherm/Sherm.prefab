@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7559979410432010021}
   - component: {fileID: 7559979410432010020}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7559979411457035683}
   - component: {fileID: 7559979411457035682}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,9 @@ GameObject:
   - component: {fileID: 7559979411519445107}
   - component: {fileID: 7559979411519445109}
   - component: {fileID: 7559979411519445106}
-  m_Layer: 0
+  - component: {fileID: 355289407}
+  - component: {fileID: 1509416396672077374}
+  m_Layer: 20
   m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +253,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.06186819, y: 0.30050266}
@@ -267,6 +269,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.840871, y: 7.434308}
   m_EdgeRadius: 0
+--- !u!50 &355289407
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559979411519445105}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1509416396672077374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559979411519445105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df608ef665428a498ce69483e597453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
+  defaultSprite: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
 --- !u!1 &7559979411604377102
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7559979411604377105}
   - component: {fileID: 7559979411604377104}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,6 +432,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisMythos: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
+  hurt1: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
+  hurt2: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
+  hurt3: {fileID: 21300000, guid: 53d4f4af54ebe9a40b352df182a27538, type: 3}
+  dead: {fileID: 21300000, guid: 23cfbfce7f73507458e513c85dd72ab4, type: 3}
+  prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!1 &7559979411972147549
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7559979411972147548}
   - component: {fileID: 7559979411972147551}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}

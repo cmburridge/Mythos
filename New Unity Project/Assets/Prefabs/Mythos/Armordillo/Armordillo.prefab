@@ -764,6 +764,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisMythos: {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
+  hurt1: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
+  hurt2: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
+  hurt3: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
+  dead: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
+  prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!1 &6755049446886876775
 GameObject:
   m_ObjectHideFlags: 0

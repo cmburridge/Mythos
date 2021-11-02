@@ -268,6 +268,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisMythos: {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
+  hurt1: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
+  hurt2: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
+  hurt3: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
+  dead: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
+  prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!1 &933365836598216227
 GameObject:
   m_ObjectHideFlags: 0

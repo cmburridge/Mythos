@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
-  m_Name: Fiasco
+  m_Name: ENSherm
   m_EditorClassIdentifier: 
   onScreen: 0
   collected: 0
   character: {fileID: 0}
   characterSelect: {fileID: 0}
   characterDetails: {fileID: 0}
-  characterFight: {fileID: 8586710166490657698, guid: 8fb602c0a1752ce45b771080e7e67779, type: 3}
+  characterFight: {fileID: 6093512848704731278, guid: 5ea87f96a67c9084bb1d93cd287f321c, type: 3}
   canAttack: 0
-  charSprite: {fileID: 21300000, guid: 13752b4f6d7d35544b1ccee6cfdd42cb, type: 3}
-  charMenu: {fileID: 21300000, guid: 164d8d923a44396438eb3268f5574fc5, type: 3}
+  charSprite: {fileID: 21300000, guid: 23cfbfce7f73507458e513c85dd72ab4, type: 3}
+  charMenu: {fileID: 21300000, guid: 82692ce4423f78d4a96f406f4d252a7f, type: 3}
   biome: {fileID: 0}
   attackIcon: {fileID: 0}
-  mythosName: Fiasco
+  mythosName: Sherm
   hp: 0
-  speed: 2
-  power: 10
+  maxHp: 2
+  speed: 1
+  power: 6
   defense: 6
   special: {fileID: 0}

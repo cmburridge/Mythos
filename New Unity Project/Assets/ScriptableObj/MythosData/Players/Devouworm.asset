@@ -21,10 +21,11 @@ MonoBehaviour:
   canAttack: 0
   charSprite: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
   charMenu: {fileID: 21300000, guid: f1a2a686a25f8064c918b160ff2cbcde, type: 3}
-  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
+  biome: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}
   attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
   mythosName: Devouworm
   hp: 3
+  maxHp: 0
   speed: 2
   power: 11
   defense: 8

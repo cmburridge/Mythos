@@ -25,6 +25,7 @@ MonoBehaviour:
   attackIcon: {fileID: 21300000, guid: d314a9bbca3ba05458a0806b5a79ee5b, type: 3}
   mythosName: Akontista
   hp: 3
+  maxHp: 0
   speed: 2
   power: 10
   defense: 8

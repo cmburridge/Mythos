@@ -18,6 +18,7 @@ public class Collectable : ScriptableObject
     public Sprite attackIcon;
     public string mythosName;
     public float hp;
+    public float maxHp;
     public float speed;
     public float power;
     public float defense;

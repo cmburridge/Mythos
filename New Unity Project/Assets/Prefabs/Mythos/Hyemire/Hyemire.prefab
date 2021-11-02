@@ -443,6 +443,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisMythos: {fileID: 11400000, guid: c904647001b7a7d40b3fd8bdfa084423, type: 2}
+  hurt1: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}
+  hurt2: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}
+  hurt3: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}
+  dead: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}
+  prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!1 &9219200436447314314
 GameObject:
   m_ObjectHideFlags: 0

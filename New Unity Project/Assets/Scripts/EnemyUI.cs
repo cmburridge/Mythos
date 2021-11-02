@@ -14,16 +14,27 @@ public class EnemyUI : MonoBehaviour
     public Collectable thisMythos;
     public Collectable targetMythos;
 
-    
+    public void OnEnable()
+    {
+        targetMythos.characterFight = null;
+        targetMythos.power = 0;
+        targetMythos.defense = 0;
+        targetMythos.hp = 0;
+        target.SetActive(false);
+        enemyIcon.sprite = null;
+        enemyMenu.sprite = null;
+        targetMythos.charSprite = null;
+    }
 
     private void OnMouseDown()
     {
         targetMythos.characterFight = thisMythos.characterFight;
+        targetMythos.charSprite = thisMythos.charSprite;
         targetMythos.power = thisMythos.power;
         targetMythos.defense = thisMythos.defense;
+        targetMythos.hp = thisMythos.hp;
         target.SetActive(true);
         enemyIcon.sprite = icon ;
         enemyMenu.sprite = menu ;
-        targetMythos.charSprite = thisMythos.charSprite;
     }
 }
