@@ -25,7 +25,7 @@ MonoBehaviour:
   attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
   mythosName: Devouworm
   hp: 3
-  maxHp: 0
+  maxHp: 3
   speed: 2
   power: 11
   defense: 8

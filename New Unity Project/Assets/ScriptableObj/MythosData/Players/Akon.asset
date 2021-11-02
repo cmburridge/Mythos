@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Akon
   m_EditorClassIdentifier: 
   onScreen: 0
-  collected: 0
+  collected: 1
   character: {fileID: 469019903705758882, guid: dfc63664ec3fab340961e5e14f40a81b, type: 3}
   characterSelect: {fileID: 6188386820322542666, guid: f5ebee070c1bfca43aa9471a5de6b39c, type: 3}
   characterDetails: {fileID: 8443573521434007458, guid: 08607afe9f86e6a4eabbbc1d3a303e76, type: 3}
@@ -25,7 +25,7 @@ MonoBehaviour:
   attackIcon: {fileID: 21300000, guid: d314a9bbca3ba05458a0806b5a79ee5b, type: 3}
   mythosName: Akontista
   hp: 3
-  maxHp: 0
+  maxHp: 3
   speed: 2
   power: 10
   defense: 8
