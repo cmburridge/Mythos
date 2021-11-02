@@ -658,6 +658,7 @@ GameObject:
   - component: {fileID: 5313559619743480065}
   - component: {fileID: 5313559619743480094}
   - component: {fileID: 5313559619743480095}
+  - component: {fileID: 4882843995206456649}
   m_Layer: 0
   m_Name: Armordillo
   m_TagString: Untagged
@@ -750,6 +751,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4882843995206456649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313559619743480092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142fe1ae25861004f8e621718c577835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
 --- !u!1 &6755049446886876775
 GameObject:
   m_ObjectHideFlags: 0

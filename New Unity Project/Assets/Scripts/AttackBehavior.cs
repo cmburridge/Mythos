@@ -15,7 +15,8 @@ public class AttackBehavior : MonoBehaviour
 
     public GameObject background;
     public GameObject transition;
-
+    public GameObject button;
+    
 
     public void StartAttack()
     {
@@ -24,6 +25,7 @@ public class AttackBehavior : MonoBehaviour
 
     private IEnumerator AttackSequence()
     {
+        button.SetActive(false);
         Instantiate(transition, background.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1);
         background.SetActive(true);

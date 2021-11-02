@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 469019903705758911}
   - component: {fileID: 469019903705758880}
   - component: {fileID: 469019903705758881}
+  - component: {fileID: 5350106393718961005}
   m_Layer: 0
   m_Name: Akontista
   m_TagString: Untagged
@@ -103,6 +104,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5350106393718961005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469019903705758882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142fe1ae25861004f8e621718c577835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 61aa588fbc916e8449d52814e4012a17, type: 2}
 --- !u!1 &469019903799208978
 GameObject:
   m_ObjectHideFlags: 0

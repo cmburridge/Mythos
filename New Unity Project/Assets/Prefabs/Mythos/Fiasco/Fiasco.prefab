@@ -565,6 +565,7 @@ GameObject:
   - component: {fileID: 5562731902223824763}
   - component: {fileID: 5562731902223824741}
   - component: {fileID: 5562731902223824740}
+  - component: {fileID: 4036542528646032125}
   m_Layer: 0
   m_Name: Fiasco
   m_TagString: Untagged
@@ -579,7 +580,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5562731902223824762}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 14.7, z: -0.038871765}
   m_LocalScale: {x: 0.78824013, y: 0.78824013, z: 0.78824013}
   m_Children:
@@ -632,3 +633,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.660408, y: 8.089428}
   m_EdgeRadius: 0
+--- !u!114 &4036542528646032125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562731902223824762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142fe1ae25861004f8e621718c577835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 1cb2c8be7de715b4790b71d0fb9f49fb, type: 2}

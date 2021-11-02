@@ -18,9 +18,10 @@ MonoBehaviour:
   characterSelect: {fileID: 7934089603914672207, guid: 70290c29b201c164daa7f14476c0f7d1, type: 3}
   characterDetails: {fileID: 6263913084762738049, guid: 1ebba3d22de77e94fab83183899abcba, type: 3}
   characterFight: {fileID: 8450418245409105179, guid: f4b614245cff0e94fbb1e1b9483c2deb, type: 3}
+  canAttack: 0
   charSprite: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
   charMenu: {fileID: 21300000, guid: f5b61e949f462fc4e8eefb2fd4bae5cf, type: 3}
-  biome: {fileID: 21300000, guid: 1eaf85b86691ea849ab0cd4777204cc4, type: 3}
+  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
   attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
   mythosName: Armordillo
   hp: 4

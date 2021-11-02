@@ -37,6 +37,8 @@ public class BiomeChoose : MonoBehaviour
     public GameObject transition;
     public GameObject defendHolder;
     public GameObject teamGroup;
+    public GameObject enemyGroup;
+    public GameObject button;
 
     public void OnEnable()
     {
@@ -72,6 +74,8 @@ public class BiomeChoose : MonoBehaviour
             yield return new WaitForSecondsRealtime(1);
             buttons.SetActive(true);
             teamGroup.SetActive(true);
+            enemyGroup.SetActive(true);
+            button.SetActive(true);
             attackScene.SetActive(false);
         }
     }
@@ -92,18 +96,22 @@ public class BiomeChoose : MonoBehaviour
             yield return new WaitForSecondsRealtime(1);
             buttons.SetActive(true);
             teamGroup.SetActive(true);
+            enemyGroup.SetActive(true);
+            button.SetActive(true);
             attackScene.SetActive(false);
         }
         else
         {
             yield return new WaitForSecondsRealtime(1);
-            Instantiate(team.special, defendHolder.transform.position, Quaternion.identity, targetSpawn.transform);
+            Instantiate(team.special, defendHolder.transform.position, Quaternion.identity, defendHolder.transform);
             yield return new WaitForSecondsRealtime(1);
             Debug.Log("damaged");
             Instantiate(transition, attackScene.transform.position, Quaternion.identity);
             yield return new WaitForSecondsRealtime(1);
             buttons.SetActive(true);
             teamGroup.SetActive(true);
+            enemyGroup.SetActive(true);
+            button.SetActive(true);
             attackScene.SetActive(false);
         }
     }
