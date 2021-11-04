@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -26,15 +27,15 @@ public class EnemyUI : MonoBehaviour
         targetMythos.charSprite = null;
     }
 
-    private void OnMouseDown()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        targetMythos.characterFight = thisMythos.characterFight;
-        targetMythos.charSprite = thisMythos.charSprite;
-        targetMythos.power = thisMythos.power;
-        targetMythos.defense = thisMythos.defense;
-        targetMythos.hp = thisMythos.hp;
-        target.SetActive(true);
-        enemyIcon.sprite = icon ;
-        enemyMenu.sprite = menu ;
+        targetMythos.characterFight = null;
+        targetMythos.charSprite = null;
+        targetMythos.power = 0;
+        targetMythos.defense = 0;
+        targetMythos.hp = 0;
+        target.SetActive(false);
+        enemyIcon.sprite = null ;
+        enemyMenu.sprite = null ;
     }
 }
