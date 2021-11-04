@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hyemire
   m_EditorClassIdentifier: 
   onScreen: 0
-  collected: 1
+  collected: 0
   character: {fileID: 9219200436343119643, guid: dba2db372e4d87a42a20eb0d54c29a2d, type: 3}
   characterSelect: {fileID: 3024341771534914812, guid: bf0f9a99a08d6eb46b119562f44fc0a8, type: 3}
   characterDetails: {fileID: 1793357424792407564, guid: dd915f86f8d033a4a9f0d67c7de893ce, type: 3}

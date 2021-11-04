@@ -34,8 +34,8 @@ TagManager:
   - AttackHitBox
   - Attacks
   - AttackCheck
+  - TargetCheck
   - Enemy
-  - 
   - 
   - 
   - 

@@ -18,7 +18,7 @@ MonoBehaviour:
   characterSelect: {fileID: 6188386820322542666, guid: f5ebee070c1bfca43aa9471a5de6b39c, type: 3}
   characterDetails: {fileID: 8443573521434007458, guid: 08607afe9f86e6a4eabbbc1d3a303e76, type: 3}
   characterFight: {fileID: 8448821725933391820, guid: c8ef9bbe191763b4e9bcbd52d5e850fa, type: 3}
-  canAttack: 0
+  canAttack: 1
   charSprite: {fileID: 21300000, guid: e50173987ea57a04ca824ac13ae3eb84, type: 3}
   charMenu: {fileID: 21300000, guid: 8b9379c28385c2b4e8fe5079287072b3, type: 3}
   biome: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}

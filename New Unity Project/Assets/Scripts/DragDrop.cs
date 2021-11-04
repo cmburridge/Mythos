@@ -26,7 +26,7 @@ public class DragDrop : MonoBehaviour
 
     public float movement = 0;
     public bool canMove = true;
-    
+
     public bool CanDrag { get; set; }
     public UnityEvent OnDrag;
     public UnityEvent OnUp; 
@@ -52,6 +52,7 @@ public class DragDrop : MonoBehaviour
             teamate.attackIcon = thisMythos.attackIcon;
             teamate.charSprite = thisMythos.charSprite;
             teamate.special = thisMythos.special;
+            teamate.canAttack = thisMythos.canAttack;
             
             OnDrag.Invoke();
             offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
@@ -76,6 +77,7 @@ public class DragDrop : MonoBehaviour
         if (canMove == true)
         {
             teamate.biome = thisMythos.biome;
+            teamate.canAttack = thisMythos.canAttack;
             
             CanDrag = false;
             yield return new WaitForFixedUpdate();
@@ -92,7 +94,7 @@ public class DragDrop : MonoBehaviour
             if (Draggable)
             {
                 OnUp.Invoke();
-            }   
+            }
         }
         
         

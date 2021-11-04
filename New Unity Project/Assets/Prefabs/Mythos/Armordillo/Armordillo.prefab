@@ -647,6 +647,89 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &3155525095201595967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2117323799560228922}
+  - component: {fileID: 7861683465693006707}
+  - component: {fileID: 660068802945060171}
+  - component: {fileID: 109506968819234130}
+  m_Layer: 19
+  m_Name: Range (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2117323799560228922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3155525095201595967}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3, y: 0.7, z: 0.06357907}
+  m_LocalScale: {x: 1.9432756, y: 1.9432756, z: 1.9432756}
+  m_Children: []
+  m_Father: {fileID: 5313559619743480065}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &7861683465693006707
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3155525095201595967}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5.4539003
+--- !u!50 &660068802945060171
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3155525095201595967}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &109506968819234130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3155525095201595967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74af895b76037fc4f812dd75bbb7deeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
 --- !u!1 &5313559619743480092
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,6 +764,7 @@ Transform:
   - {fileID: 3007923713345051697}
   - {fileID: 3007923713174759788}
   - {fileID: 6231247819259005879}
+  - {fileID: 2117323799560228922}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -733,6 +817,7 @@ MonoBehaviour:
   teamate: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
   movement: 0
   canMove: 1
+  button: {fileID: 0}
   OnDrag:
     m_PersistentCalls:
       m_Calls: []
