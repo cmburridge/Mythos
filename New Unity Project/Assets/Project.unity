@@ -2217,6 +2217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71bcc1a29496f1641a4baa7a2c05afe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teamMythos: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
   collectableObj1: {fileID: 0}
   collectableObj2: {fileID: 0}
   collectionFull: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
@@ -14243,7 +14244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1715520387
 Transform:
   m_ObjectHideFlags: 0

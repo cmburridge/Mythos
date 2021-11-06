@@ -14,28 +14,21 @@ public class EnemyUI : MonoBehaviour
     public GameObject target;
     public Collectable thisMythos;
     public Collectable targetMythos;
-
-    public void OnEnable()
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        targetMythos.characterFight = null;
-        targetMythos.power = 0;
-        targetMythos.defense = 0;
-        targetMythos.hp = 0;
-        target.SetActive(false);
-        enemyIcon.sprite = null;
-        enemyMenu.sprite = null;
-        targetMythos.charSprite = null;
+        targetMythos.characterFight = thisMythos.characterFight;
+        targetMythos.charSprite = thisMythos.charSprite;
+        targetMythos.power = thisMythos.power;
+        targetMythos.defense = thisMythos.defense;
+        targetMythos.hp = thisMythos.hp;
+        target.SetActive(true);
+        enemyIcon.sprite = icon ;
+        enemyMenu.sprite = menu ;
     }
-
+    
     private void OnTriggerExit2D(Collider2D other)
     {
-        targetMythos.characterFight = null;
-        targetMythos.charSprite = null;
-        targetMythos.power = 0;
-        targetMythos.defense = 0;
-        targetMythos.hp = 0;
         target.SetActive(false);
-        enemyIcon.sprite = null ;
-        enemyMenu.sprite = null ;
     }
 }

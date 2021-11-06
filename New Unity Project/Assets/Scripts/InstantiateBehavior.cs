@@ -9,6 +9,7 @@ using Random = UnityEngine.Random;
 
 public class InstantiateBehavior : MonoBehaviour
 {
+    public Collectable teamMythos;
     public Collectable collectableObj1;
     public Collectable collectableObj2;
     public Collections collectionFull;
@@ -23,6 +24,7 @@ public class InstantiateBehavior : MonoBehaviour
 
     private void Start()
     {
+        teamMythos.canAttack = false;
         Spawn();
     }
 
