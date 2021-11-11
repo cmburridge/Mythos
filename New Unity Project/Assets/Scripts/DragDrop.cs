@@ -128,6 +128,5 @@ public class DragDrop : MonoBehaviour
         canMove = true;
         transform.position = positionData.value;
     }
-
 }
 
