@@ -19,6 +19,7 @@ public class DragDrop : MonoBehaviour
     public Vector3Data newSpace;
 
     public GameObject moveCheck;
+    public GameObject spaceFill;
     public GameObject movePosition;
     
     public Collectable thisMythos;
@@ -58,6 +59,7 @@ public class DragDrop : MonoBehaviour
             teamate.attackIcon = thisMythos.attackIcon;
             teamate.charSprite = thisMythos.charSprite;
             teamate.special = thisMythos.special;
+            teamate.canAttack = thisMythos.canAttack;
 
             OnDrag.Invoke();
             offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
@@ -73,6 +75,7 @@ public class DragDrop : MonoBehaviour
                 moveCheck.SetActive(true);
                 movePosition.SetActive(true);
                 moveCheck.transform.position = movePositionData.value;
+                spaceFill.transform.position = movePositionData.value;
             }
         }
     }
@@ -82,6 +85,7 @@ public class DragDrop : MonoBehaviour
         if (canMove == true)
         {
             teamate.biome = thisMythos.biome;
+            teamate.canAttack = thisMythos.canAttack;
 
             CanDrag = false;
             yield return new WaitForFixedUpdate();
@@ -91,6 +95,7 @@ public class DragDrop : MonoBehaviour
             movePosition.SetActive(false);
         
             moveCheck.transform.position = movePositionData.value;
+            spaceFill.transform.position = movePositionData.value;
             transform.localScale = scaleData.value;
 
             movement += -1;
@@ -102,10 +107,10 @@ public class DragDrop : MonoBehaviour
         }
         
         
-        //if (movement == 0)
-        //{
-            //canMove = false;
-       // }
+        if (movement == 0)
+        {
+            canMove = false;
+        }
     }
 
     public void Move()
