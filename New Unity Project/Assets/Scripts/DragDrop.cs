@@ -107,10 +107,10 @@ public class DragDrop : MonoBehaviour
         }
         
         
-        if (movement == 0)
-        {
-            canMove = false;
-        }
+        //if (movement == 0)
+        //{
+            //canMove = false;
+        //}
     }
 
     public void Move()
