@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ea63fa76e44d4498bb6175ce5cc155, type: 3}
   m_Name: Collected
   m_EditorClassIdentifier: 
-  collection:
-  - {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
+  collection: []

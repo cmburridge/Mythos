@@ -21,6 +21,7 @@ public class DragDrop : MonoBehaviour
     public GameObject moveCheck;
     public GameObject spaceFill;
     public GameObject movePosition;
+    public GameObject undo;
     
     public Collectable thisMythos;
     public Collectable teamate;
@@ -90,9 +91,11 @@ public class DragDrop : MonoBehaviour
             CanDrag = false;
             yield return new WaitForFixedUpdate();
             transform.position = positionData.value;
+            
         
             moveCheck.SetActive(false);
             movePosition.SetActive(false);
+            undo.SetActive(true);
         
             moveCheck.transform.position = movePositionData.value;
             spaceFill.transform.position = movePositionData.value;
@@ -107,15 +110,23 @@ public class DragDrop : MonoBehaviour
         }
         
         
-        //if (movement == 0)
-        //{
-            //canMove = false;
-        //}
+        if (movement == 0)
+        {
+            canMove = false;
+        }
     }
 
     public void Move()
     {
         transform.position = newSpace.value;
+    }
+
+    public void Undo()
+    {
+        undo.SetActive(false);
+        movement += 1;
+        canMove = true;
+        transform.position = positionData.value;
     }
 
 }
