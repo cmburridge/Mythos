@@ -13,8 +13,15 @@ MonoBehaviour:
   m_Name: Team
   m_EditorClassIdentifier: 
   collection:
+<<<<<<< Updated upstream
   - {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
+<<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 11400000, guid: c904647001b7a7d40b3fd8bdfa084423, type: 2}
 =======
 >>>>>>> parent of c9ff18f... Auto stash before merge of "main" and "origin/main"
+=======
+=======
+  - {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
+>>>>>>> Stashed changes
+>>>>>>> main
