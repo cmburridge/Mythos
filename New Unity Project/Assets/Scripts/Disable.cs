@@ -12,7 +12,7 @@ public class Disable : MonoBehaviour
 
     private IEnumerator DisableThis()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         this.gameObject.SetActive(false);
     }
 }
