@@ -40,6 +40,7 @@ public class InstantiateBehavior : MonoBehaviour
             collectableObj1.onScreen = true;
         }
         collectableObj2 = collectableObj1;
+        collectionFull.collection.Remove(collectableObj2);
         Spawn2();
     }
 
@@ -83,6 +84,7 @@ public class InstantiateBehavior : MonoBehaviour
     public IEnumerator Option2()
     {
         Instantiate(transition, background.transform.position, Quaternion.identity);
+        collectionFull.collection.Add(collectableObj2);
         collectionTeam.collection.Add(collectableObj1);
         collectionFull.collection.Remove(collectableObj1);
         collectableObj2.onScreen = false;
