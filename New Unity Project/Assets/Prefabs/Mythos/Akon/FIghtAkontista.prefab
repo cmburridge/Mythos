@@ -186,6 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8448821725933391825}
   - component: {fileID: -2535370801640254773}
+  - component: {fileID: 4653842386021647574}
   m_Layer: 0
   m_Name: FIghtAkontista
   m_TagString: Untagged
@@ -223,6 +224,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 8
+--- !u!114 &4653842386021647574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448821725933391820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d02ef68aa7fbd49b473921054b4fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 61aa588fbc916e8449d52814e4012a17, type: 2}
+  teamMythos: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
 --- !u!1 &8448821726443390103
 GameObject:
   m_ObjectHideFlags: 0

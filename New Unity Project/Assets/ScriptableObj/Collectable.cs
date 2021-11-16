@@ -11,7 +11,8 @@ public class Collectable : ScriptableObject
     public GameObject characterSelect;
     public GameObject characterDetails;
     public GameObject characterFight;
-    public bool canAttack;
+    public bool canAttack = false;
+    public bool turnOver = false;
     public Sprite charSprite;
     public Sprite charMenu;
     public Sprite biome;

@@ -200,6 +200,8 @@ MonoBehaviour:
   spaceFill: {fileID: 8173357637014549856}
   movePosition: {fileID: 1730149615158559314}
   undo: {fileID: 8355167955994509625}
+  attackCheck: {fileID: 7651113247063150324}
+  rangeCheck: {fileID: 2228363567569491698}
   thisMythos: {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
   teamate: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
   movement: 0

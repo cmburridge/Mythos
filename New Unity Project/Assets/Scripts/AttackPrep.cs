@@ -10,13 +10,13 @@ public class AttackPrep : MonoBehaviour
 
     public void Update()
     {
-        if (thisMythos.canAttack == true)
+        if (thisMythos.canAttack != true)
         {
-            button.SetActive(true);
+            button.SetActive(false);
         }
         else
         {
-            button.SetActive(false);
+            button.SetActive(true);
         }
     }
 }

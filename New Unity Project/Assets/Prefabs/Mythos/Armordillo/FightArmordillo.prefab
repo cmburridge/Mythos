@@ -577,6 +577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8450418245409105158}
   - component: {fileID: 6506574235747077792}
+  - component: {fileID: 2175207244660276326}
   m_Layer: 0
   m_Name: FightArmordillo
   m_TagString: Untagged
@@ -613,3 +614,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 8
+--- !u!114 &2175207244660276326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8450418245409105179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d02ef68aa7fbd49b473921054b4fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
+  teamMythos: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
