@@ -7,7 +7,14 @@ public class AddSpeedAbility : MonoBehaviour
 {
     public Collectable thisMythos;
     public Sprite biomeBuff;
-    private void OnEnable()
+    public float ogSpd = 2;
+
+    private void Start()
+    {
+        thisMythos.speed = ogSpd;
+    }
+
+    public void OnEnable()
     {
         if (thisMythos.biome == biomeBuff)
         {

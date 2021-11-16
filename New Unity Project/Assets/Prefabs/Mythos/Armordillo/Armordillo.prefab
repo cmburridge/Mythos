@@ -821,7 +821,6 @@ GameObject:
   - component: {fileID: 5313559619743480094}
   - component: {fileID: 5313559619743480095}
   - component: {fileID: 4882843995206456649}
-  - component: {fileID: 52949311195203400}
   m_Layer: 0
   m_Name: Armordillo
   m_TagString: Untagged
@@ -940,20 +939,6 @@ MonoBehaviour:
   hurt3: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
   dead: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
   prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
---- !u!114 &52949311195203400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5313559619743480092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2505f2d41b14f8e419e341ef190a1214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisMythos: {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
-  biomeBuff: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
 --- !u!1 &6755049446886876775
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +951,7 @@ GameObject:
   - component: {fileID: 3297859109643322786}
   - component: {fileID: 3838641547740474570}
   - component: {fileID: 6818494694351116335}
+  - component: {fileID: 5303882707324307905}
   m_Layer: 16
   m_Name: BiomeCheck (1)
   m_TagString: Untagged
@@ -1052,6 +1038,21 @@ MonoBehaviour:
   woodlands: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
   darklands: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
   glacial: {fileID: 21300000, guid: 1eaf85b86691ea849ab0cd4777204cc4, type: 3}
+--- !u!114 &5303882707324307905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755049446886876775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2505f2d41b14f8e419e341ef190a1214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
+  biomeBuff: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
+  ogSpd: 2
 --- !u!1 &7730513149828860454
 GameObject:
   m_ObjectHideFlags: 0
