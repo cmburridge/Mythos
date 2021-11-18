@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42ea63fa76e44d4498bb6175ce5cc155, type: 3}
-  m_Name: Collected
+  m_Script: {fileID: 11500000, guid: 510fbb48c620bdb439fde3a05cea40a5, type: 3}
+  m_Name: EnemyPos
   m_EditorClassIdentifier: 
-  collection:
-  - {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
+  value: {x: 0, y: 0, z: 0}

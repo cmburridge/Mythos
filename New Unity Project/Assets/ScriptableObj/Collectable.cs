@@ -13,6 +13,7 @@ public class Collectable : ScriptableObject
     public GameObject characterFight;
     public bool canAttack = false;
     public bool turnOver = false;
+    public bool turnStart = false;
     public Sprite charSprite;
     public Sprite charMenu;
     public Sprite biome;

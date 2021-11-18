@@ -44,9 +44,15 @@ public class DragDrop : MonoBehaviour
         thisMythos.canAttack = false;
         thisMythos.turnOver = false;
     }
-
     private void Update()
     {
+        if (teamate.turnStart == true)
+        {
+            canMove = true;
+            movement = thisMythos.speed;
+            thisMythos.turnOver = false;
+        }
+        
         if (thisMythos.turnOver == true)
         {
             attackCheck.SetActive(false);
@@ -73,6 +79,7 @@ public class DragDrop : MonoBehaviour
             teamate.charSprite = thisMythos.charSprite;
             teamate.special = thisMythos.special;
             teamate.canAttack = thisMythos.canAttack;
+            teamate.turnStart = false;
             spaceFill.SetActive(false);
 
             OnDrag.Invoke();
