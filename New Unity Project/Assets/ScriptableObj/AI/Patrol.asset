@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82f944535486b80468f2846033685830, type: 3}
-  m_Name: AiBrain
+  m_Script: {fileID: 11500000, guid: b304360ea99d8d245a2879031af37b8e, type: 3}
+  m_Name: Patrol
   m_EditorClassIdentifier: 
-  aiBaseObj: {fileID: 11400000, guid: 40e88e6564ea5be498ea940632967391, type: 2}
+  speed: 3.5
+  angularSpeed: 120
+  patrolPoints: {fileID: 11400000, guid: 5fbab93b7f5305c43b8ad9ee4353ef96, type: 2}
