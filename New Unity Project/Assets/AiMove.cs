@@ -14,6 +14,12 @@ public class AiMove : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         location = other.transform.position;
+        StartCoroutine(Move());
+    }
+
+    private IEnumerator Move()
+    {
+        yield return new WaitForSecondsRealtime(1);
         enLocation.value = location;
         moveTriggered.Invoke();
         StartCoroutine(TurnOff());

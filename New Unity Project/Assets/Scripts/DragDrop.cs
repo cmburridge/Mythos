@@ -31,6 +31,8 @@ public class DragDrop : MonoBehaviour
     public float movement = 0;
     public bool canMove = true;
 
+    public AudioSource audioClip;
+
     public bool CanDrag { get; set; }
     public UnityEvent OnDrag;
     public UnityEvent OnUp; 
@@ -105,6 +107,7 @@ public class DragDrop : MonoBehaviour
     {
         if (canMove == true)
         {
+            audioClip.Play();
             teamate.biome = thisMythos.biome;
             teamate.canAttack = thisMythos.canAttack;
             spaceFill.SetActive(true);

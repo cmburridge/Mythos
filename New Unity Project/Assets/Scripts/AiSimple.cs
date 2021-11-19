@@ -7,12 +7,14 @@ using UnityEngine.Events;
 public class AiSimple : MonoBehaviour
 {
     public Transform destination;
-    private NavMeshAgent agent;
+    private NavMeshAgent agentAI;
     private WaitForFixedUpdate waitObj = new WaitForFixedUpdate();
     public GameObject moveCheck;
     public Vector3Data enLocation;
     public GameObject button;
     public UnityEvent nextEnemy;
+    public AudioSource audioClip;
+    public Collectable thisMythos;
 
     public float lockPos;
 
@@ -23,22 +25,36 @@ public class AiSimple : MonoBehaviour
 
     public void GetLocations()
     {
-        moveCheck.SetActive(true);
+        if (thisMythos.hp <= 0)
+        {
+            StartCoroutine(NextTurn());
+        }
+        else
+        {
+            moveCheck.SetActive(true);   
+        }
     }
 
     public void SetLocation()
     {
         destination.transform.position = enLocation.value;
+        audioClip.Play();
+        StartCoroutine(NextTurn());
+    }
+
+    public IEnumerator NextTurn()
+    {
+        yield return new WaitForSeconds(1);
         nextEnemy.Invoke();
     }
 
     private IEnumerator Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agentAI = GetComponent<NavMeshAgent>();
         while (true)
         {
             yield return waitObj;
-            agent.destination = destination.position;
+            agentAI.destination = destination.position;
         }
     }
 
