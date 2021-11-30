@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
   m_Name: Hyemire
   m_EditorClassIdentifier: 
-  onScreen: 1
+  onScreen: 0
   collected: 1
   character: {fileID: 9219200436343119643, guid: dba2db372e4d87a42a20eb0d54c29a2d, type: 3}
   characterSelect: {fileID: 3024341771534914812, guid: bf0f9a99a08d6eb46b119562f44fc0a8, type: 3}
   characterDetails: {fileID: 1793357424792407564, guid: dd915f86f8d033a4a9f0d67c7de893ce, type: 3}
   characterFight: {fileID: 1456164298570642163, guid: 64b44f8e78e0b5a4d882864e43eb4883, type: 3}
+  canMove: 1
   canAttack: 0
   turnOver: 1
   turnStart: 0

@@ -50,7 +50,7 @@ public class DragDrop : MonoBehaviour
     {
         if (teamate.turnStart == true)
         {
-            canMove = true;
+            thisMythos.canMove = true;
             movement = thisMythos.speed;
             thisMythos.turnOver = false;
         }
@@ -69,7 +69,7 @@ public class DragDrop : MonoBehaviour
 
     public IEnumerator OnMouseDown()
     {
-        if (canMove == true)
+        if (thisMythos.canMove == true)
         {
             movePositionData.value = moveCheck.transform.position;
             scaleData.value = transform.localScale;
@@ -105,7 +105,7 @@ public class DragDrop : MonoBehaviour
     
     private IEnumerator OnMouseUp()
     {
-        if (canMove == true)
+        if (thisMythos.canMove == true)
         {
             audioClip.Play();
             teamate.biome = thisMythos.biome;
@@ -136,7 +136,7 @@ public class DragDrop : MonoBehaviour
         
         if (movement == 0)
         {
-            canMove = false;
+            thisMythos.canMove = false;
         }
     }
 
@@ -149,7 +149,7 @@ public class DragDrop : MonoBehaviour
     {
         undo.SetActive(false);
         movement += 1;
-        canMove = true;
+        thisMythos.canMove = true;
         transform.position = positionData.value;
     }
 }

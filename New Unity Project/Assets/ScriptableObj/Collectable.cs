@@ -11,6 +11,7 @@ public class Collectable : ScriptableObject
     public GameObject characterSelect;
     public GameObject characterDetails;
     public GameObject characterFight;
+    public bool canMove = true;
     public bool canAttack = false;
     public bool turnOver = false;
     public bool turnStart = false;
