@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 8582f011d2348ad42ad5379b0a96de14
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6948239131808210837
+    second: VioletSlash_0
+  - first:
+      213: 2583680108116721045
+    second: VioletSlash_1
+  - first:
+      213: 8884078785367748071
+    second: VioletSlash_2
+  - first:
+      213: 101399244858601299
+    second: VioletSlash_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +125,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: VioletSlash_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 46
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b606a1ea255e29f90800000000000000
+      internalID: -6948239131808210837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VioletSlash_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 30
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d3a819e531bd320800000000000000
+      internalID: 2583680108116721045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VioletSlash_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 7
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edad6ed5969a4b70800000000000000
+      internalID: 8884078785367748071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VioletSlash_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f2a42731e386100800000000000000
+      internalID: 101399244858601299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0fdad8cbafcbeaf4a958d06ecaa5c9eb
     internalID: 0
     vertices: []
     indices: 

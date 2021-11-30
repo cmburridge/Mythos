@@ -11,8 +11,10 @@ public class AiSimple : MonoBehaviour
     private NavMeshAgent agentAI;
     private WaitForFixedUpdate waitObj = new WaitForFixedUpdate();
     public GameObject moveCheck;
+    public GameObject rangeCheck;
     public Vector3Data enLocation;
     public GameObject button;
+    public UnityEvent attack;
     public UnityEvent nextEnemy;
     public AudioSource audioClip;
     public Collectable thisMythos;
@@ -28,6 +30,16 @@ public class AiSimple : MonoBehaviour
     void Update()
     {
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, lockPos, lockPos);
+    }
+
+    public void AttackCheck()
+    {
+        rangeCheck.SetActive(true);
+    }
+
+    public void AttackSequence()
+    {
+        attack.Invoke();
     }
 
     public void GetLocations()

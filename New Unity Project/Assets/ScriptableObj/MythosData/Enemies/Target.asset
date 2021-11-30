@@ -17,14 +17,19 @@ MonoBehaviour:
   character: {fileID: 0}
   characterSelect: {fileID: 0}
   characterDetails: {fileID: 0}
-  characterFight: {fileID: 6093512848704731278, guid: 5ea87f96a67c9084bb1d93cd287f321c, type: 3}
-  charSprite: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
+  characterFight: {fileID: 8586710166490657698, guid: 8fb602c0a1752ce45b771080e7e67779, type: 3}
+  canMove: 1
+  canAttack: 0
+  turnOver: 0
+  turnStart: 0
+  charSprite: {fileID: 21300000, guid: aeba091f49660c74ea40dbde101ec2af, type: 3}
   charMenu: {fileID: 0}
   biome: {fileID: 0}
   attackIcon: {fileID: 21300000, guid: 23b5f6c29ea34a444b6df31c96379ba5, type: 3}
   mythosName: 
-  hp: 0
+  hp: 2
+  maxHp: 0
   speed: 0
-  power: 6
+  power: 20
   defense: 6
-  special: {fileID: 0}
+  special: {fileID: 2596202516957685822, guid: a3d1c2842e1196b4c9648e5b35022e9b, type: 3}
