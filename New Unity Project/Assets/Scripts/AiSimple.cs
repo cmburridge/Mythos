@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -15,8 +16,14 @@ public class AiSimple : MonoBehaviour
     public UnityEvent nextEnemy;
     public AudioSource audioClip;
     public Collectable thisMythos;
+    public float movement;
 
     public float lockPos;
+
+    private void OnEnable()
+    {
+        movement = thisMythos.speed;
+    }
 
     void Update()
     {
@@ -25,21 +32,63 @@ public class AiSimple : MonoBehaviour
 
     public void GetLocations()
     {
-        if (thisMythos.hp <= 0)
+        if (thisMythos.hp <= 0 || movement <= 0)
         {
             StartCoroutine(NextTurn());
         }
-        else
+        else if (movement == 1)
         {
-            moveCheck.SetActive(true);   
+            StartCoroutine(move1());
         }
+        else if (movement == 2)
+        {
+            StartCoroutine(move2());
+        }
+        else if (movement == 3)
+        {
+            StartCoroutine(move3());
+        }
+    }
+
+    private IEnumerator move1()
+    {
+        yield return new WaitForSecondsRealtime(0);
+        moveCheck.SetActive(true);
+        movement = 0;
+    }
+    
+    private IEnumerator move2()
+    {
+        moveCheck.SetActive(true);
+        yield return new WaitForSecondsRealtime(2);
+        moveCheck.SetActive(true);
+        movement = 0;
+    }
+    
+    private IEnumerator move3()
+    {
+        Debug.Log("yes");
+        moveCheck.SetActive(true);
+        yield return new WaitForSecondsRealtime(2);
+        moveCheck.SetActive(true);
+        yield return new WaitForSecondsRealtime(2);
+        moveCheck.SetActive(true);
+        movement = 0;
     }
 
     public void SetLocation()
     {
-        destination.transform.position = enLocation.value;
-        audioClip.Play();
-        StartCoroutine(NextTurn());
+        if (movement <= 0)
+        {
+            destination.transform.position = enLocation.value;
+            audioClip.Play();
+            StartCoroutine(NextTurn());   
+        }
+        else
+        {
+            destination.transform.position = enLocation.value;
+            audioClip.Play();
+        }
     }
 
     public IEnumerator NextTurn()

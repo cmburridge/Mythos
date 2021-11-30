@@ -1531,7 +1531,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.3529412}
   m_FlipX: 0
@@ -15208,7 +15208,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e791d3396e8858847bf95be6bf512010, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20924,6 +20924,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2082791992}
     m_Modifications:
+    - target: {fileID: 3795987401744751403, guid: 38e0dd3772fee924da4c681fdf98999f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795987401744751403, guid: 38e0dd3772fee924da4c681fdf98999f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795987401744751404, guid: 38e0dd3772fee924da4c681fdf98999f, type: 3}
+      propertyPath: movement
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3795987403370362533, guid: 38e0dd3772fee924da4c681fdf98999f, type: 3}
       propertyPath: audio
       value: 
@@ -21021,6 +21033,10 @@ PrefabInstance:
       propertyPath: enemyMenu
       value: 
       objectReference: {fileID: 1508594795}
+    - target: {fileID: 4068639225598575158, guid: 3679b2adeb8aafd4aa921215b8cdae39, type: 3}
+      propertyPath: movement
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4068639226631623952, guid: 3679b2adeb8aafd4aa921215b8cdae39, type: 3}
       propertyPath: m_RootOrder
       value: 1
