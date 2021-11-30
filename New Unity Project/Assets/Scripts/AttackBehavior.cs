@@ -29,6 +29,7 @@ public class AttackBehavior : MonoBehaviour
         Instantiate(transition, background.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1);
         background.SetActive(true);
+        yield return new WaitForSeconds(0);
         Instantiate(team.characterFight, teamSpawn.transform.position, Quaternion.identity, teamSpawn.transform);
         Instantiate(target.characterFight, targetSpawn.transform.position, Quaternion.identity, targetSpawn.transform);
     }

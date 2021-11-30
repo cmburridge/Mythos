@@ -39,10 +39,12 @@ public class BiomeChoose : MonoBehaviour
     public GameObject teamGroup;
     public GameObject enemyGroup;
     public GameObject button;
+    public GameObject diceText;
 
     public void OnEnable()
     {
-        diceVal.text = "0";
+        diceText.SetActive(true);
+        diceVal.text = " ";
         thisRen.sprite = teamMythos.biome;
         teamRen.sprite = teamMythos.attackIcon;
         enemyRen.sprite = targetMythos.attackIcon;
@@ -50,12 +52,16 @@ public class BiomeChoose : MonoBehaviour
         enemyNum.text = targetMythos.defense.ToString();
         teamIcon.sprite = teamMythos.charSprite;
         enemyIcon.sprite = targetMythos.charSprite;
+    }
+
+    public void ButtonPress()
+    {
         StartCoroutine(Roll());
+        diceText.SetActive(false);
     }
 
     public IEnumerator Roll()
     {
-        yield return new WaitForSecondsRealtime(3);
         randomValue = Random.Range(1, 20);
         audio.Play();
         diceVal.text = randomValue.ToString();

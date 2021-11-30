@@ -42,6 +42,7 @@ public class DragDrop : MonoBehaviour
     {
         cam = Camera.main;
         Draggable = true;
+        thisMythos.canMove = true;
         movement = thisMythos.speed;
         thisMythos.canAttack = false;
         thisMythos.turnOver = false;
