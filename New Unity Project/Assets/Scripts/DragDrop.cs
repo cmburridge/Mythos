@@ -44,6 +44,7 @@ public class DragDrop : MonoBehaviour
         Draggable = true;
         thisMythos.canMove = true;
         movement = thisMythos.speed;
+        thisMythos.hp = thisMythos.maxHp;
         thisMythos.canAttack = false;
         thisMythos.turnOver = false;
     }

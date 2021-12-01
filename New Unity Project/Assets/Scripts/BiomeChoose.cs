@@ -14,8 +14,6 @@ public class BiomeChoose : MonoBehaviour
     public Collectable team;
     
     public SpriteRenderer thisRen;
-    public Image teamRen;
-    public Image enemyRen;
     public SpriteRenderer teamIcon;
     public SpriteRenderer enemyIcon;
     
@@ -49,10 +47,6 @@ public class BiomeChoose : MonoBehaviour
         diceText.SetActive(true);
         diceVal.text = " ";
         thisRen.sprite = teamMythos.biome;
-        teamRen.sprite = teamMythos.attackIcon;
-        enemyRen.sprite = targetMythos.attackIcon;
-        teamNum.text = teamMythos.power.ToString();
-        enemyNum.text = targetMythos.defense.ToString();
         teamIcon.sprite = teamMythos.charSprite;
         enemyIcon.sprite = targetMythos.charSprite;
     }
@@ -65,6 +59,8 @@ public class BiomeChoose : MonoBehaviour
 
     public IEnumerator Roll()
     {
+        teamNum.text = teamMythos.power.ToString();
+        enemyNum.text = targetMythos.defense.ToString();
         randomValue = Random.Range(1, 20);
         audio.Play();
         diceVal.text = randomValue.ToString();
@@ -133,6 +129,8 @@ public class BiomeChoose : MonoBehaviour
 
     public IEnumerator AiRoll()
     {
+        teamNum.text = teamMythos.defense.ToString();
+        enemyNum.text = targetMythos.power.ToString();
         yield return new WaitForSeconds(1);
         randomValue = Random.Range(1, 20);
         audio.Play();

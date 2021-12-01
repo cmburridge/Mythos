@@ -48,6 +48,7 @@ public class AiFight : MonoBehaviour
         else
         {
             yield return new WaitForSecondsRealtime(0);
+            canAttack = false;
             this.gameObject.SetActive(false);
         }
     }

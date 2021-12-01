@@ -22,14 +22,14 @@ MonoBehaviour:
   canAttack: 0
   turnOver: 0
   turnStart: 0
-  charSprite: {fileID: 21300000, guid: aeba091f49660c74ea40dbde101ec2af, type: 3}
+  charSprite: {fileID: 21300000, guid: 13752b4f6d7d35544b1ccee6cfdd42cb, type: 3}
   charMenu: {fileID: 21300000, guid: 164d8d923a44396438eb3268f5574fc5, type: 3}
   biome: {fileID: 0}
   attackIcon: {fileID: 0}
   mythosName: Fiasco
-  hp: 2
+  hp: 3
   maxHp: 3
   speed: 2
-  power: 20
+  power: 10
   defense: 6
   special: {fileID: 2596202516957685822, guid: a3d1c2842e1196b4c9648e5b35022e9b, type: 3}

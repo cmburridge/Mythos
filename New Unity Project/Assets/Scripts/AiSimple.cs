@@ -34,12 +34,27 @@ public class AiSimple : MonoBehaviour
 
     public void AttackCheck()
     {
-        rangeCheck.SetActive(true);
+        if (thisMythos.hp <= 0)
+        { 
+            StartCoroutine(NextTurn());
+        }
+        else
+        {
+            rangeCheck.SetActive(true);
+        }
     }
 
     public void AttackSequence()
     {
         attack.Invoke();
+        StartCoroutine(WaitTill());
+
+    }
+
+    private IEnumerator WaitTill()
+    {
+        yield return new WaitForSeconds(8);
+        StartCoroutine(NextTurn());
     }
 
     public void GetLocations()
@@ -79,7 +94,6 @@ public class AiSimple : MonoBehaviour
     
     private IEnumerator move3()
     {
-        Debug.Log("yes");
         moveCheck.SetActive(true);
         yield return new WaitForSecondsRealtime(2);
         moveCheck.SetActive(true);
@@ -107,6 +121,7 @@ public class AiSimple : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         nextEnemy.Invoke();
+        movement = thisMythos.speed;
     }
 
     private IEnumerator Start()
