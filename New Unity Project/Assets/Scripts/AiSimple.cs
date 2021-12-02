@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class AiSimple : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class AiSimple : MonoBehaviour
     public AudioSource audioClip;
     public Collectable thisMythos;
     public float movement;
+    public int randomNum;
 
     public float lockPos;
 
@@ -30,6 +32,32 @@ public class AiSimple : MonoBehaviour
     void Update()
     {
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, lockPos, lockPos);
+    }
+
+    public void Decide()
+    {
+        randomNum = Random.Range(1,4);
+
+        if (thisMythos.hp <= 0)
+        { 
+            StartCoroutine(NextTurn());
+        }
+        else if (randomNum == 1 || randomNum == 2)
+        {
+            AttackCheck();
+        }
+        else if (randomNum == 3 || randomNum == 4)
+        {
+            StartCoroutine(MoveAttack());
+        }
+    }
+
+    private IEnumerator MoveAttack()
+    {
+        moveCheck.SetActive(true);
+        movement += -1;
+        yield return new WaitForSecondsRealtime(4);
+        AttackCheck();
     }
 
     public void AttackCheck()
