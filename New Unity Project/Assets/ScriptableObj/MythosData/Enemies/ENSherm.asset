@@ -18,6 +18,7 @@ MonoBehaviour:
   characterSelect: {fileID: 0}
   characterDetails: {fileID: 0}
   characterFight: {fileID: 6093512848704731278, guid: 5ea87f96a67c9084bb1d93cd287f321c, type: 3}
+  canMove: 1
   canAttack: 0
   turnOver: 0
   turnStart: 0
@@ -31,4 +32,4 @@ MonoBehaviour:
   speed: 1
   power: 6
   defense: 6
-  special: {fileID: 0}
+  special: {fileID: 8214575510399149547, guid: 3c7656277e5cac3478750b639d18a99a, type: 3}

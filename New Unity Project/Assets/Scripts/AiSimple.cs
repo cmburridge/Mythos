@@ -55,9 +55,9 @@ public class AiSimple : MonoBehaviour
     private IEnumerator MoveAttack()
     {
         moveCheck.SetActive(true);
-        movement += -1;
         yield return new WaitForSecondsRealtime(4);
         AttackCheck();
+        movement = 0;
     }
 
     public void AttackCheck()
@@ -81,7 +81,7 @@ public class AiSimple : MonoBehaviour
 
     private IEnumerator WaitTill()
     {
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(7);
         StartCoroutine(NextTurn());
     }
 

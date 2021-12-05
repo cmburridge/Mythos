@@ -5,9 +5,12 @@ using UnityEngine;
 public class TurnController : MonoBehaviour
 {
     public Collectable teamMythos;
+    public GameObject teamHold;
 
     public void TurnStart()
     {
         teamMythos.turnStart = true;
+        teamHold.SetActive(false);
+        teamHold.SetActive(true);
     }
 }

@@ -2460,8 +2460,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c2b271278f4e3644ba0e855ac0094288, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_PlayOnAwake: 0
+  m_Volume: 0.35
   m_Pitch: 0.9
   Loop: 1
   Mute: 0
@@ -5609,13 +5609,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -0.000024921575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1747377007}
-  m_RootOrder: 1
+  m_Father: {fileID: 1122242996}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: 603}
-  m_SizeDelta: {x: 381.68, y: -30.091}
+  m_AnchoredPosition: {x: 5.244995, y: -198.00003}
+  m_SizeDelta: {x: -6.703, y: -836.929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451285255
 MonoBehaviour:
@@ -5639,7 +5639,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f88891df898b066439faafe4ad8e5088, type: 3}
-    m_FontSize: 43
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -5650,7 +5650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tap to roll
+  m_Text: "Tap to \nroll"
 --- !u!222 &451285256
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12640,9 +12640,11 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 451285254}
+  - {fileID: 1228388509}
   m_Father: {fileID: 1747377007}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13096,9 +13098,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
-        m_MethodName: Spawn
+      - m_Target: {fileID: 193158070}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14271,13 +14273,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -0.000024921575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1747377007}
-  m_RootOrder: 2
+  m_Father: {fileID: 1122242996}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.106701, y: 605.91504}
-  m_SizeDelta: {x: 381.68, y: -30.091}
+  m_AnchoredPosition: {x: 3.3516998, y: -195.00003}
+  m_SizeDelta: {x: -6.703, y: -834.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1228388510
 MonoBehaviour:
@@ -14301,7 +14303,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f88891df898b066439faafe4ad8e5088, type: 3}
-    m_FontSize: 43
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -14312,7 +14314,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tap to roll
+  m_Text: "Tap to \nroll"
 --- !u!222 &1228388511
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15850,9 +15852,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
-        m_MethodName: Spawn
+      - m_Target: {fileID: 193158070}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16457,6 +16459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamMythos: {fileID: 11400000, guid: fa396a5b891ef5746856db6d98ac7828, type: 2}
+  teamHold: {fileID: 897362064}
 --- !u!4 &1455727891
 Transform:
   m_ObjectHideFlags: 0
@@ -18745,8 +18748,6 @@ RectTransform:
   m_LocalScale: {x: 0.03165535, y: 0.035668, z: 0.035668}
   m_Children:
   - {fileID: 2133783764}
-  - {fileID: 451285254}
-  - {fileID: 1228388509}
   - {fileID: 1122242996}
   m_Father: {fileID: 1829694702}
   m_RootOrder: 7
@@ -23061,6 +23062,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2096438000, guid: 3679b2adeb8aafd4aa921215b8cdae39, type: 3}
+      propertyPath: thisMythos
+      value: 
+      objectReference: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
     - target: {fileID: 2562155958544498886, guid: 3679b2adeb8aafd4aa921215b8cdae39, type: 3}
       propertyPath: target
       value: 

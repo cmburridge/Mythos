@@ -45,6 +45,8 @@ public class BiomeChoose : MonoBehaviour
     public void OnEnable()
     {
         diceText.SetActive(true);
+        teamNum.text = teamMythos.power.ToString();
+        enemyNum.text = targetMythos.defense.ToString();
         diceVal.text = " ";
         thisRen.sprite = teamMythos.biome;
         teamIcon.sprite = teamMythos.charSprite;
@@ -59,8 +61,6 @@ public class BiomeChoose : MonoBehaviour
 
     public IEnumerator Roll()
     {
-        teamNum.text = teamMythos.power.ToString();
-        enemyNum.text = targetMythos.defense.ToString();
         randomValue = Random.Range(1, 20);
         audio.Play();
         diceVal.text = randomValue.ToString();
@@ -69,7 +69,7 @@ public class BiomeChoose : MonoBehaviour
             Debug.Log("hit");
             StartCoroutine(AiDefend());
         }
-        else
+        else if (randomValue >= team.power)
         {
             yield return new WaitForSecondsRealtime(1);
             audio.PlayOneShot(miss, 1);
@@ -106,7 +106,7 @@ public class BiomeChoose : MonoBehaviour
             button.SetActive(true);
             attackScene.SetActive(false);
         }
-        else
+        else if (randomValue >= target.defense)
         {
             yield return new WaitForSecondsRealtime(1);
             Instantiate(team.special, targetEffects.transform.position, Quaternion.identity, targetEffects.transform);
@@ -129,8 +129,6 @@ public class BiomeChoose : MonoBehaviour
 
     public IEnumerator AiRoll()
     {
-        teamNum.text = teamMythos.defense.ToString();
-        enemyNum.text = targetMythos.power.ToString();
         yield return new WaitForSeconds(1);
         randomValue = Random.Range(1, 20);
         audio.Play();
@@ -140,7 +138,7 @@ public class BiomeChoose : MonoBehaviour
             Debug.Log("hit");
             StartCoroutine(Defend());
         }
-        else
+        else if (randomValue >= target.power)
         {
             yield return new WaitForSecondsRealtime(1);
             audio.PlayOneShot(miss, 1);
@@ -163,7 +161,7 @@ public class BiomeChoose : MonoBehaviour
         randomValue = Random.Range(1, 20);
         audio.Play();
         diceVal.text = randomValue.ToString();
-        if (randomValue <= target.defense)
+        if (randomValue <= team.defense)
         {
             yield return new WaitForSecondsRealtime(1);
             Instantiate(defend, teamEffects.transform.position, Quaternion.identity, targetEffects.transform );
@@ -177,7 +175,7 @@ public class BiomeChoose : MonoBehaviour
             button.SetActive(true);
             attackScene.SetActive(false);
         }
-        else
+        else if (randomValue >= team.defense)
         {
             yield return new WaitForSecondsRealtime(1);
             Instantiate(target.special, teamEffects.transform.position, Quaternion.identity, targetEffects.transform);

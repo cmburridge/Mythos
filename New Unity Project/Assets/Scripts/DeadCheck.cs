@@ -9,7 +9,7 @@ public class DeadCheck : MonoBehaviour
    public Sprite hurt1, hurt2, hurt3, dead;
    public GameObject prefab;
    
-   private void Update()
+   private void OnEnable()
    {
       StartCoroutine(Check());
    }

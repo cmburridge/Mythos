@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 0082156e231d0e6469522126438614f8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5212049029342449651
+    second: PoisonBlob_0
+  - first:
+      213: 2359734594840684114
+    second: PoisonBlob_1
+  - first:
+      213: 705762070363830724
+    second: PoisonBlob_2
+  - first:
+      213: 6007068856692067073
+    second: PoisonBlob_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +125,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PoisonBlob_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 7
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff40e14afae45840800000000000000
+      internalID: 5212049029342449651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonBlob_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 8
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256eda19c167fb020800000000000000
+      internalID: 2359734594840684114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonBlob_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 7
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9fafb1dde5bc900800000000000000
+      internalID: 705762070363830724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PoisonBlob_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 7
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b41706c456d5350800000000000000
+      internalID: 6007068856692067073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 616c2909c58d6de44b43e5820a57b586
     internalID: 0
     vertices: []
     indices: 
