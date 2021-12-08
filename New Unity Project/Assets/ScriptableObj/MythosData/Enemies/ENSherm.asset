@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ENSherm
   m_EditorClassIdentifier: 
   onScreen: 0
-  collected: 0
+  collected: 1
   character: {fileID: 0}
   characterSelect: {fileID: 0}
   characterDetails: {fileID: 0}
