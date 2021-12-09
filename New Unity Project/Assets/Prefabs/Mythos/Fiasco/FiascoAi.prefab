@@ -324,7 +324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AiSimple, Assembly-CSharp
-        m_MethodName: GetLocations
+        m_MethodName: Decide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -337,6 +337,7 @@ MonoBehaviour:
   audioClip: {fileID: -1709984692490698134}
   thisMythos: {fileID: 11400000, guid: 1cb2c8be7de715b4790b71d0fb9f49fb, type: 2}
   movement: 0
+  randomNum: 0
   lockPos: 0
 --- !u!82 &-1709984692490698134
 AudioSource:
@@ -441,6 +442,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3795987403370362535}
     m_Modifications:
+    - target: {fileID: 4036542528646032125, guid: 245dd0fc49e39594d8d4f580fc12a4a7, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 332e7840e59f3984a80c75ed79b63400, type: 2}
     - target: {fileID: 5562731902223824741, guid: 245dd0fc49e39594d8d4f580fc12a4a7, type: 3}
       propertyPath: target
       value: 

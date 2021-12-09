@@ -41,6 +41,7 @@ public class BiomeChoose : MonoBehaviour
     public GameObject enemyGroup;
     public GameObject button;
     public GameObject diceText;
+    public GameObject teamHold;
 
     public void OnEnable()
     {
@@ -51,6 +52,11 @@ public class BiomeChoose : MonoBehaviour
         thisRen.sprite = teamMythos.biome;
         teamIcon.sprite = teamMythos.charSprite;
         enemyIcon.sprite = targetMythos.charSprite;
+    }
+
+    private void OnDisable()
+    {
+        teamHold.SetActive(true);
     }
 
     public void ButtonPress()
@@ -125,6 +131,8 @@ public class BiomeChoose : MonoBehaviour
     public void StartAttack()
     {
         StartCoroutine(AiRoll());
+        teamNum.text = teamMythos.defense.ToString();
+        enemyNum.text = targetMythos.power.ToString();
     }
 
     public IEnumerator AiRoll()

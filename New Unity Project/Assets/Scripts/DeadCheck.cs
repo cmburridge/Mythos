@@ -6,6 +6,7 @@ using UnityEngine;
 public class DeadCheck : MonoBehaviour
 {
    public Collectable thisMythos;
+   public FloatData data;
    public Sprite hurt1, hurt2, hurt3, dead;
    public GameObject prefab;
    
@@ -37,6 +38,7 @@ public class DeadCheck : MonoBehaviour
          thisMythos.charSprite = dead;
          Instantiate(prefab, this.transform.position, Quaternion.identity);
          yield return new WaitForSeconds(1);
+         data.value += 1;
          Destroy(this.gameObject);
       }
    }

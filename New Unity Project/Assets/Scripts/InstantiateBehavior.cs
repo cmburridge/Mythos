@@ -74,6 +74,7 @@ public class InstantiateBehavior : MonoBehaviour
         Instantiate(transition, background.transform.position, Quaternion.identity);
         collectionTeam.collection.Add(collectableObj2);
         collectionFull.collection.Remove(collectableObj2);
+        collectionFull.collection.Remove(collectableObj1);
         collectableObj2.onScreen = false;
         collectableObj2.collected = true;
         yield return new WaitForSecondsRealtime(1);
@@ -84,7 +85,6 @@ public class InstantiateBehavior : MonoBehaviour
     public IEnumerator Option2()
     {
         Instantiate(transition, background.transform.position, Quaternion.identity);
-        collectionFull.collection.Add(collectableObj2);
         collectionTeam.collection.Add(collectableObj1);
         collectionFull.collection.Remove(collectableObj1);
         collectableObj2.onScreen = false;

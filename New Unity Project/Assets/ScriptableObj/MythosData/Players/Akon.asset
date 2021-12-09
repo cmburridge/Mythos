@@ -24,10 +24,10 @@ MonoBehaviour:
   turnStart: 0
   charSprite: {fileID: 21300000, guid: e50173987ea57a04ca824ac13ae3eb84, type: 3}
   charMenu: {fileID: 21300000, guid: 8b9379c28385c2b4e8fe5079287072b3, type: 3}
-  biome: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}
+  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
   attackIcon: {fileID: 21300000, guid: d314a9bbca3ba05458a0806b5a79ee5b, type: 3}
   mythosName: Akontista
-  hp: -3
+  hp: 0
   maxHp: 3
   speed: 2
   power: 10

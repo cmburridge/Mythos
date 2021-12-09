@@ -10,7 +10,5 @@ public class TurnController : MonoBehaviour
     public void TurnStart()
     {
         teamMythos.turnStart = true;
-        teamHold.SetActive(false);
-        teamHold.SetActive(true);
     }
 }

@@ -940,6 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisMythos: {fileID: 11400000, guid: c904647001b7a7d40b3fd8bdfa084423, type: 2}
+  data: {fileID: 11400000, guid: e5c55dce87fb4c147b67bdb78ac1d9a2, type: 2}
   hurt1: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}
   hurt2: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}
   hurt3: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}

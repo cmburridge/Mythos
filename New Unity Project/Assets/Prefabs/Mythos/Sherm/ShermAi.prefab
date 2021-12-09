@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2096437999
 Transform:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19dc62491d14f384ab85d10101a635ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisMythos: {fileID: 11400000, guid: 1cb2c8be7de715b4790b71d0fb9f49fb, type: 2}
+  thisMythos: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
   targetMythos: {fileID: 11400000, guid: 7987dcfe95b97db468811c6caedb3570, type: 2}
   attackTriggered:
     m_PersistentCalls:
@@ -349,6 +349,7 @@ MonoBehaviour:
   audioClip: {fileID: -5622770070586869583}
   thisMythos: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
   movement: 0
+  randomNum: 0
   lockPos: 0
 --- !u!82 &-5622770070586869583
 AudioSource:
@@ -453,6 +454,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4068639226631623952}
     m_Modifications:
+    - target: {fileID: 2942712669754811834, guid: 7c71e7bd8fae1f94e988b7254e8895fa, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 332e7840e59f3984a80c75ed79b63400, type: 2}
     - target: {fileID: 7559979411519445109, guid: 7c71e7bd8fae1f94e988b7254e8895fa, type: 3}
       propertyPath: target
       value: 
