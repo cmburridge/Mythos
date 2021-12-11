@@ -19,6 +19,7 @@ public class EnemyUI : MonoBehaviour
     {
         targetMythos.characterFight = thisMythos.characterFight;
         targetMythos.charSprite = thisMythos.charSprite;
+        targetMythos.characterDetails = thisMythos.characterDetails;
         targetMythos.power = thisMythos.power;
         targetMythos.defense = thisMythos.defense;
         targetMythos.hp = thisMythos.hp;
