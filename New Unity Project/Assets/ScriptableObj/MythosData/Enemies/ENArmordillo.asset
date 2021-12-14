@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
-  m_Name: Armordillo
+  m_Name: ENArmordillo
   m_EditorClassIdentifier: 
   onScreen: 0
   collected: 0
-  character: {fileID: 5313559619743480092, guid: 6745e5b4169155845b8340f352925aa7, type: 3}
-  characterSelect: {fileID: 7934089603914672207, guid: 70290c29b201c164daa7f14476c0f7d1, type: 3}
+  character: {fileID: 0}
+  characterSelect: {fileID: 0}
   characterDetails: {fileID: 6263913084762738049, guid: 1ebba3d22de77e94fab83183899abcba, type: 3}
-  characterFight: {fileID: 8450418245409105179, guid: f4b614245cff0e94fbb1e1b9483c2deb, type: 3}
+  characterFight: {fileID: 3013296020127151557, guid: 1af2d7f654f75a541962c8ebd3f9b547, type: 3}
   canMove: 1
   canAttack: 0
   turnOver: 0
   turnStart: 0
   charSprite: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
   charMenu: {fileID: 21300000, guid: f5b61e949f462fc4e8eefb2fd4bae5cf, type: 3}
-  biome: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
-  attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
-  mythosName: Armordillo
+  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
+  attackIcon: {fileID: 0}
+  mythosName: 
   hp: 4
   maxHp: 4
   speed: 2

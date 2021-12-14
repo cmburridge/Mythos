@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 6c6c744e5d74d0b4c8b05fc0c459cb78
+  - enabled: 1
+    path: Assets/Scenes/Sherm.unity
+    guid: 85db66538c66b664ead835968ac8d1e8
+  - enabled: 1
+    path: Assets/Scenes/Devouworm.unity
+    guid: 8934c3fd450fbf2409d706c249ccce2a
+  - enabled: 1
+    path: Assets/Scenes/Armordillo.unity
+    guid: 84dbe6d48e7b35d45908ff0355601acd
+  - enabled: 1
+    path: Assets/Scenes/Fiasco.unity
+    guid: 90398000c9206034daca1cccebcd786a
   m_configObjects: {}

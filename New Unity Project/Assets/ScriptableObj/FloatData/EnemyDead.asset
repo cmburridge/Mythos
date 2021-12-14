@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3cf9ae2678f5be44bb578a7121ee14c, type: 3}
   m_Name: EnemyDead
   m_EditorClassIdentifier: 
-  value: 2
+  value: 0

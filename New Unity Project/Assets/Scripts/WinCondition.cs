@@ -14,6 +14,7 @@ public class WinCondition : MonoBehaviour
     public GameObject music;
     public GameObject button;
     public Collectable thisMythos;
+    public Collections collectionTeam;
 
     private void Start()
     {
@@ -21,25 +22,29 @@ public class WinCondition : MonoBehaviour
         enemyAmount.value = 0;
     }
 
-    void Update()
+    public void EndMatch()
     {
         if (enemyAmount.value >= amount && thisMythos.collected == false)
         {
+            collectionTeam.collection.Add(thisMythos);
             unlockScreen.SetActive(true); 
             button.SetActive(false);
             music.SetActive(false);
+            return;
         }
-        if (enemyAmount.value >= amount && thisMythos.collected == true)
+        else if (enemyAmount.value >= amount && thisMythos.collected == true)
         {
            winScreen.SetActive(true); 
            button.SetActive(false);
            music.SetActive(false);
+           return;
         }
         else if (teamAmount.value >= amount)
         {
             loseScreen.SetActive(true); 
             button.SetActive(false);
             music.SetActive(false);
+            return;
         }
     }
 }

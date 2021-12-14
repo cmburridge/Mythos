@@ -43,6 +43,7 @@ public class DragDrop : MonoBehaviour
         cam = Camera.main;
         Draggable = true;
         thisMythos.canMove = true;
+        thisMythos.collected = true;
         movement = thisMythos.speed;
         thisMythos.hp = thisMythos.maxHp;
         thisMythos.canAttack = false;

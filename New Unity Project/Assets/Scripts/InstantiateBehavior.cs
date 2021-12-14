@@ -30,18 +30,27 @@ public class InstantiateBehavior : MonoBehaviour
 
     private void Spawn()
     {
-        value = Random.Range(0, collectionFull.collection.Count);
-        size = collectionFull.collection.Count;
-
-        for (var i = value; i < size; i++)
+        if (collectionFull.collection.Count <= 1)
         {
-            collectableObj1 = collectionFull.collection[value];
-            Instantiate(collectableObj1.characterSelect, obj1Position.transform.position, Quaternion.identity, obj1Position.transform);
-            collectableObj1.onScreen = true;
+            return;
         }
-        collectableObj2 = collectableObj1;
-        collectionFull.collection.Remove(collectableObj2);
-        Spawn2();
+        else
+        {
+            value = Random.Range(0, collectionFull.collection.Count);
+            size = collectionFull.collection.Count;
+
+            for (var i = value; i < size; i++)
+            {
+                collectableObj1 = collectionFull.collection[value];
+                Instantiate(collectableObj1.characterSelect, obj1Position.transform.position, Quaternion.identity,
+                    obj1Position.transform);
+                collectableObj1.onScreen = true;
+            }
+
+            collectableObj2 = collectableObj1;
+            collectionFull.collection.Remove(collectableObj2);
+            Spawn2();
+        }
     }
 
     private void Spawn2()
@@ -68,6 +77,11 @@ public class InstantiateBehavior : MonoBehaviour
     {
         StartCoroutine(Option2());
     }
+    
+    public void NoneSelected()
+    {
+        StartCoroutine(Option3());
+    }
 
     public IEnumerator Option1()
     {
@@ -89,6 +103,15 @@ public class InstantiateBehavior : MonoBehaviour
         collectionFull.collection.Remove(collectableObj1);
         collectableObj2.onScreen = false;
         collectableObj1.collected = true;
+        yield return new WaitForSecondsRealtime(1);
+        background.SetActive(false);
+        audio.Play();
+    }
+
+    public IEnumerator Option3()
+    {
+        Instantiate(transition, background.transform.position, Quaternion.identity);
+        collectableObj2.onScreen = false;
         yield return new WaitForSecondsRealtime(1);
         background.SetActive(false);
         audio.Play();

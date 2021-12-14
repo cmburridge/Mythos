@@ -16,7 +16,7 @@ MonoBehaviour:
   collected: 0
   character: {fileID: 0}
   characterSelect: {fileID: 0}
-  characterDetails: {fileID: 6263913084762738049, guid: 1ebba3d22de77e94fab83183899abcba, type: 3}
+  characterDetails: {fileID: 4339066187361437842, guid: b218d6eff6171174c946b04f81a6aa60, type: 3}
   characterFight: {fileID: 6093512848704731278, guid: 5ea87f96a67c9084bb1d93cd287f321c, type: 3}
   canMove: 1
   canAttack: 0

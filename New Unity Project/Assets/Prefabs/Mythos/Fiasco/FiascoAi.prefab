@@ -29,7 +29,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2021220776383779746}
   m_Father: {fileID: 3795987403370362535}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -144,7 +145,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 891257541731767374}
   m_Father: {fileID: 3795987403370362535}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -197,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c9e095945cab945bd3afcb8a06be27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisMythos: {fileID: 0}
+  thisMythos: {fileID: 3795987403370362534}
   location: {x: 0, y: 0, z: 0}
   enLocation: {fileID: 11400000, guid: c096c532749ef114eac030c0f46ed821, type: 2}
   moveTriggered:
@@ -242,9 +244,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3795987403370362534}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.9, y: 9.9, z: -36.91249}
-  m_LocalScale: {x: 0.78824013, y: 0.78824013, z: 0.78824013}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 13.284781, y: 8.790947, z: -36.7}
+  m_LocalScale: {x: 0.78824013, y: 0.7882402, z: 0.7882402}
   m_Children:
   - {fileID: 8933800901938098268}
   - {fileID: 3795987401744751403}
@@ -336,6 +338,7 @@ MonoBehaviour:
         m_CallState: 2
   audioClip: {fileID: -1709984692490698134}
   thisMythos: {fileID: 11400000, guid: 1cb2c8be7de715b4790b71d0fb9f49fb, type: 2}
+  targetMythos: {fileID: 11400000, guid: 7987dcfe95b97db468811c6caedb3570, type: 2}
   movement: 0
   randomNum: 0
   lockPos: 0
@@ -435,6 +438,202 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &4096235405038359684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891257541731767374}
+  - component: {fileID: 7235706297492166711}
+  - component: {fileID: 8548673683373112018}
+  - component: {fileID: 2438209544939365572}
+  m_Layer: 16
+  m_Name: BiomeCheck (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891257541731767374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096235405038359684}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.12079784, y: 0.09999883, z: 2.51}
+  m_LocalScale: {x: 1.0807241, y: 1.0807236, z: 1.0807236}
+  m_Children: []
+  m_Father: {fileID: 3795987401744751403}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &7235706297492166711
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096235405038359684}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1902805, y: -0.5814117}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.472116, y: 3.002754}
+  m_EdgeRadius: 0
+--- !u!50 &8548673683373112018
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096235405038359684}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2438209544939365572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096235405038359684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b60ed47b2b6d24d98af47a887cdd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 1cb2c8be7de715b4790b71d0fb9f49fb, type: 2}
+  desert: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}
+  mountain: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
+  woodlands: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
+  darklands: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
+  glacial: {fileID: 21300000, guid: 1eaf85b86691ea849ab0cd4777204cc4, type: 3}
+--- !u!1 &4695780033822697457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021220776383779746}
+  - component: {fileID: 4889520001137858348}
+  - component: {fileID: 9189514106884082101}
+  - component: {fileID: 4936021659920051719}
+  m_Layer: 16
+  m_Name: BiomeCheck (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2021220776383779746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4695780033822697457}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.12079784, y: 0.09999883, z: 2.51}
+  m_LocalScale: {x: 1.0807241, y: 1.0807236, z: 1.0807236}
+  m_Children: []
+  m_Father: {fileID: 297100485}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &4889520001137858348
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4695780033822697457}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1902805, y: -0.5814117}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.472116, y: 3.002754}
+  m_EdgeRadius: 0
+--- !u!50 &9189514106884082101
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4695780033822697457}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &4936021659920051719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4695780033822697457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b60ed47b2b6d24d98af47a887cdd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisMythos: {fileID: 11400000, guid: 1cb2c8be7de715b4790b71d0fb9f49fb, type: 2}
+  desert: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}
+  mountain: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
+  woodlands: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
+  darklands: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
+  glacial: {fileID: 21300000, guid: 1eaf85b86691ea849ab0cd4777204cc4, type: 3}
 --- !u!1001 &3947958845046589223
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -38,6 +38,7 @@ public class AiSimple : MonoBehaviour
     public void Decide()
     {
         randomNum = Random.Range(1,4);
+        targetMythos.biome = thisMythos.biome;
 
         if (thisMythos.hp <= 0)
         { 
@@ -57,6 +58,7 @@ public class AiSimple : MonoBehaviour
     {
         moveCheck.SetActive(true);
         yield return new WaitForSecondsRealtime(4);
+        targetMythos.biome = thisMythos.biome;
         AttackCheck();
         movement = 0;
     }
@@ -75,6 +77,7 @@ public class AiSimple : MonoBehaviour
 
     public void AttackSequence()
     {
+        targetMythos.biome = thisMythos.biome;
         attack.Invoke();
         StartCoroutine(WaitTill());
 
@@ -109,14 +112,17 @@ public class AiSimple : MonoBehaviour
     private IEnumerator move1()
     {
         yield return new WaitForSecondsRealtime(0);
+        targetMythos.biome = thisMythos.biome;
         moveCheck.SetActive(true);
         movement = 0;
     }
     
     private IEnumerator move2()
     {
+        targetMythos.biome = thisMythos.biome;
         moveCheck.SetActive(true);
         yield return new WaitForSecondsRealtime(2);
+        targetMythos.biome = thisMythos.biome;
         moveCheck.SetActive(true);
         movement = 0;
     }
@@ -125,8 +131,10 @@ public class AiSimple : MonoBehaviour
     {
         moveCheck.SetActive(true);
         yield return new WaitForSecondsRealtime(2);
+        targetMythos.biome = thisMythos.biome;
         moveCheck.SetActive(true);
         yield return new WaitForSecondsRealtime(2);
+        targetMythos.biome = thisMythos.biome;
         moveCheck.SetActive(true);
         movement = 0;
     }
