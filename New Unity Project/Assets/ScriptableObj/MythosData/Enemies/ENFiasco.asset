@@ -24,7 +24,7 @@ MonoBehaviour:
   turnStart: 0
   charSprite: {fileID: 21300000, guid: 13752b4f6d7d35544b1ccee6cfdd42cb, type: 3}
   charMenu: {fileID: 21300000, guid: 164d8d923a44396438eb3268f5574fc5, type: 3}
-  biome: {fileID: 0}
+  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
   attackIcon: {fileID: 0}
   mythosName: Fiasco
   hp: 3

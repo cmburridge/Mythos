@@ -14,6 +14,7 @@ public class BiomeChoose : MonoBehaviour
     public Collectable team;
     
     public SpriteRenderer thisRen;
+    public SpriteRenderer otherRen;
     public SpriteRenderer teamIcon;
     public SpriteRenderer enemyIcon;
     
@@ -50,6 +51,7 @@ public class BiomeChoose : MonoBehaviour
         enemyNum.text = targetMythos.defense.ToString();
         diceVal.text = " ";
         thisRen.sprite = teamMythos.biome;
+        otherRen.sprite = targetMythos.biome;
         teamIcon.sprite = teamMythos.charSprite;
         enemyIcon.sprite = targetMythos.charSprite;
     }

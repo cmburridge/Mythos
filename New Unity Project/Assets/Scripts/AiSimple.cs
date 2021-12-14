@@ -19,6 +19,7 @@ public class AiSimple : MonoBehaviour
     public UnityEvent nextEnemy;
     public AudioSource audioClip;
     public Collectable thisMythos;
+    public Collectable targetMythos;
     public float movement;
     public int randomNum;
 
@@ -159,6 +160,7 @@ public class AiSimple : MonoBehaviour
         {
             yield return waitObj;
             agentAI.destination = destination.position;
+            targetMythos.biome = thisMythos.biome;
         }
     }
 
