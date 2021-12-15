@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -21,6 +22,8 @@ public class BiomeChoose : MonoBehaviour
     public int randomValue;
     
     public Vector3 location;
+
+    public UnityEvent onDisable;
     
     public Text teamNum;
     public Text enemyNum;
@@ -59,6 +62,7 @@ public class BiomeChoose : MonoBehaviour
     private void OnDisable()
     {
         teamHold.SetActive(true);
+        onDisable.Invoke();
     }
 
     public void ButtonPress()
@@ -69,7 +73,7 @@ public class BiomeChoose : MonoBehaviour
 
     public IEnumerator Roll()
     {
-        randomValue = Random.Range(1, 20);
+        randomValue = Random.Range(1, 21);
         audio.Play();
         diceVal.text = randomValue.ToString();
         if (randomValue <= team.power)
@@ -97,7 +101,7 @@ public class BiomeChoose : MonoBehaviour
     public IEnumerator AiDefend()
     {
         yield return new WaitForSeconds(2);
-        randomValue = Random.Range(1, 20);
+        randomValue = Random.Range(1, 21);
         audio.Play();
         diceVal.text = randomValue.ToString();
         if (randomValue <= target.defense)
@@ -140,7 +144,7 @@ public class BiomeChoose : MonoBehaviour
     public IEnumerator AiRoll()
     {
         yield return new WaitForSeconds(1);
-        randomValue = Random.Range(1, 20);
+        randomValue = Random.Range(1, 21);
         audio.Play();
         diceVal.text = randomValue.ToString();
         if (randomValue <= target.power)
@@ -168,7 +172,7 @@ public class BiomeChoose : MonoBehaviour
     public IEnumerator Defend()
     {
         yield return new WaitForSeconds(2);
-        randomValue = Random.Range(1, 20);
+        randomValue = Random.Range(1, 21);
         audio.Play();
         diceVal.text = randomValue.ToString();
         if (randomValue <= team.defense)

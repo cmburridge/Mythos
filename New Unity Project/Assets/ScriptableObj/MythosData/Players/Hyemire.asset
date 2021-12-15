@@ -18,18 +18,18 @@ MonoBehaviour:
   characterSelect: {fileID: 3024341771534914812, guid: bf0f9a99a08d6eb46b119562f44fc0a8, type: 3}
   characterDetails: {fileID: 1793357424792407564, guid: dd915f86f8d033a4a9f0d67c7de893ce, type: 3}
   characterFight: {fileID: 1456164298570642163, guid: 64b44f8e78e0b5a4d882864e43eb4883, type: 3}
-  canMove: 0
+  canMove: 1
   canAttack: 0
   turnOver: 0
   turnStart: 0
   charSprite: {fileID: 21300000, guid: adbe6373530596143aa4a3ca514140bb, type: 3}
   charMenu: {fileID: 21300000, guid: 754391a92291fff4e82fd9cebfda6c29, type: 3}
-  biome: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
+  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
   attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
   mythosName: Hyemire
-  hp: 4
-  maxHp: 4
-  speed: 1
+  hp: -2
+  maxHp: 3
+  speed: 2
   power: 12
   defense: 6
   special: {fileID: 4206168545239884011, guid: 8829c8b8c7f703344b3fad7db85674e2, type: 3}

@@ -2735,6 +2735,21 @@ MonoBehaviour:
   enemyIcon: {fileID: 948834224}
   randomValue: 0
   location: {x: -0.1, y: 0, z: -59.5}
+  onDisable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736195792}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1612460735}
   enemyNum: {fileID: 1709827303}
   diceVal: {fileID: 41866462}
@@ -3253,7 +3268,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 343104608}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736195792}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &343104608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5022,6 +5049,21 @@ MonoBehaviour:
   enemyIcon: {fileID: 494294903}
   randomValue: 0
   location: {x: -0.1, y: 0, z: -59.5}
+  onDisable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736195792}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1983521101}
   enemyNum: {fileID: 1273690394}
   diceVal: {fileID: 591994315}
@@ -12918,7 +12960,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1258916260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736195792}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1258916260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13486,7 +13540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1298629906}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736195792}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1298629906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14903,7 +14969,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1409223132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736195792}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1409223132
 MonoBehaviour:
   m_ObjectHideFlags: 0

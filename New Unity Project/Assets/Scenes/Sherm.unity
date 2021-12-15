@@ -3697,7 +3697,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 485750363}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1031701868}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &485750363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4658,6 +4670,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1031701868}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1666144486}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
         m_MethodName: SceneSelect
@@ -6371,6 +6395,21 @@ MonoBehaviour:
   enemyIcon: {fileID: 708706716}
   randomValue: 0
   location: {x: -0.1, y: 0, z: -59.5}
+  onDisable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1031701868}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1478084753}
   enemyNum: {fileID: 937706611}
   diceVal: {fileID: 1595485082}
@@ -9242,6 +9281,21 @@ MonoBehaviour:
   enemyIcon: {fileID: 2089065173}
   randomValue: 0
   location: {x: -0.1, y: 0, z: -59.5}
+  onDisable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1031701868}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1898939119}
   enemyNum: {fileID: 1492257042}
   diceVal: {fileID: 1870770083}
@@ -14576,6 +14630,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1031701868}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1666144486}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
         m_MethodName: SceneSelect
@@ -14834,7 +14900,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15fc5bf880775b4291e1426698a3ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 2
+  opt1: 3
+  opt2: 5
+  randomValue: 0
   transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
 --- !u!4 &1666144487
 Transform:
@@ -16664,7 +16732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1845130499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1031701868}
+        m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
+        m_MethodName: AddNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1845130499
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -37,18 +37,18 @@ public class AiSimple : MonoBehaviour
 
     public void Decide()
     {
-        randomNum = Random.Range(1,4);
+        randomNum = Random.Range(1,3);
         targetMythos.biome = thisMythos.biome;
 
         if (thisMythos.hp <= 0)
         { 
             StartCoroutine(NextTurn());
         }
-        else if (randomNum == 1 || randomNum == 2)
+        else if (randomNum == 1)
         {
             AttackCheck();
         }
-        else if (randomNum == 3 || randomNum == 4)
+        else if (randomNum == 2)
         {
             StartCoroutine(MoveAttack());
         }

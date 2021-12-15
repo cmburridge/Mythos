@@ -18,18 +18,18 @@ MonoBehaviour:
   characterSelect: {fileID: 3139956314726475244, guid: a23b7bc64ae7f7141a897f331c71898b, type: 3}
   characterDetails: {fileID: 9096600433465249519, guid: 849b479b443618a468c1abdbcecbca17, type: 3}
   characterFight: {fileID: 7412361428379261922, guid: ef54559be749c9c4bb664df30b15e5da, type: 3}
-  canMove: 1
+  canMove: 0
   canAttack: 0
-  turnOver: 0
+  turnOver: 1
   turnStart: 0
   charSprite: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
   charMenu: {fileID: 21300000, guid: f1a2a686a25f8064c918b160ff2cbcde, type: 3}
-  biome: {fileID: 21300000, guid: 1eaf85b86691ea849ab0cd4777204cc4, type: 3}
+  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
   attackIcon: {fileID: 21300000, guid: 1708c1bd06ee3c547889d9de33e9bf84, type: 3}
   mythosName: Devouworm
-  hp: 3
-  maxHp: 3
+  hp: 2
+  maxHp: 2
   speed: 2
-  power: 11
+  power: 12
   defense: 8
   special: {fileID: 3316154983971775729, guid: d8ce58e5c425ab343aed6f05f4fb9727, type: 3}

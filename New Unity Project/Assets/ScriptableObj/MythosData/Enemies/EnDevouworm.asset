@@ -27,9 +27,9 @@ MonoBehaviour:
   biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
   attackIcon: {fileID: 0}
   mythosName: Devouworm
-  hp: 3
-  maxHp: 3
-  speed: 2
-  power: 11
+  hp: 2
+  maxHp: 2
+  speed: 1
+  power: 12
   defense: 8
   special: {fileID: 3316154983971775729, guid: d8ce58e5c425ab343aed6f05f4fb9727, type: 3}

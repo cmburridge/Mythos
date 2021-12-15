@@ -7,8 +7,9 @@ public class Damager : MonoBehaviour
 {
     public Collectable thisMythos;
     
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         thisMythos.hp += -1;
+        return;
     }
 }

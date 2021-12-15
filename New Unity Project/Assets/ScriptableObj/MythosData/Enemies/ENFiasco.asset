@@ -27,9 +27,9 @@ MonoBehaviour:
   biome: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
   attackIcon: {fileID: 0}
   mythosName: Fiasco
-  hp: 0
-  maxHp: 3
+  hp: 2
+  maxHp: 2
   speed: 2
   power: 10
-  defense: 6
+  defense: 8
   special: {fileID: 2596202516957685822, guid: a3d1c2842e1196b4c9648e5b35022e9b, type: 3}

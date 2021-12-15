@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
+  m_Name: Necross
+  m_EditorClassIdentifier: 
+  onScreen: 0
+  collected: 0
+  character: {fileID: 319050734821714944, guid: 02b448b001ee6714094bdcadf0d393b6, type: 3}
+  characterSelect: {fileID: 648592996117395098, guid: aa896cf84f48bf548ade745e9cc329a3, type: 3}
+  characterDetails: {fileID: 8979771331049167063, guid: 0f2403d7ecad9ce4196ce5ea13d26137, type: 3}
+  characterFight: {fileID: 2637522074687746214, guid: eae85974608eb2d44ab9d830d837de04, type: 3}
+  canMove: 1
+  canAttack: 0
+  turnOver: 0
+  turnStart: 0
+  charSprite: {fileID: 21300000, guid: ec65c757854fdcc42a35dd09d4cde710, type: 3}
+  charMenu: {fileID: 21300000, guid: 929fe2e6e8b92f7489586779f29ea7d3, type: 3}
+  biome: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
+  attackIcon: {fileID: 0}
+  mythosName: Necross
+  hp: 2
+  maxHp: 2
+  speed: 2
+  power: 9
+  defense: 9
+  special: {fileID: 2170230376149736571, guid: 0fb7a8cd8059c984ba7dd230c362af18, type: 3}

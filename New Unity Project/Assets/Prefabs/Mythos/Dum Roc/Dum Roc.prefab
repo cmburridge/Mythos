@@ -472,7 +472,6 @@ GameObject:
   - component: {fileID: 5442159928301752575}
   - component: {fileID: 5982942887853783447}
   - component: {fileID: 4098871809807879538}
-  - component: {fileID: 3447817523871751324}
   m_Layer: 16
   m_Name: BiomeCheck (1)
   m_TagString: Untagged
@@ -559,21 +558,6 @@ MonoBehaviour:
   woodlands: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
   darklands: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
   glacial: {fileID: 21300000, guid: 1eaf85b86691ea849ab0cd4777204cc4, type: 3}
---- !u!114 &3447817523871751324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4322601680190124858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2505f2d41b14f8e419e341ef190a1214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisMythos: {fileID: 11400000, guid: b866a983aa0e39e4f8038ef8f0a74125, type: 2}
-  biomeBuff: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
-  ogSpd: 2
 --- !u!1 &5586886480112613218
 GameObject:
   m_ObjectHideFlags: 0

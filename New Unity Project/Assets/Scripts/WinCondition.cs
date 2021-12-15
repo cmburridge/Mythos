@@ -22,11 +22,15 @@ public class WinCondition : MonoBehaviour
         enemyAmount.value = 0;
     }
 
+    public void AddNew()
+    {
+        collectionTeam.collection.Add(thisMythos);
+    }
+
     public void EndMatch()
     {
         if (enemyAmount.value >= amount && thisMythos.collected == false)
         {
-            collectionTeam.collection.Add(thisMythos);
             unlockScreen.SetActive(true); 
             button.SetActive(false);
             music.SetActive(false);

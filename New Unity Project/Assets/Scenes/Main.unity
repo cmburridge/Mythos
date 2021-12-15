@@ -1824,7 +1824,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15fc5bf880775b4291e1426698a3ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 1
+  opt1: 1
+  opt2: 3
+  randomValue: 0
   transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
 --- !u!4 &1264969528
 Transform:

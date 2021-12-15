@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 4b219a52be7dee74782ddc6ae54941b6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3306445375944992892
+    second: PinkFireBall_0
+  - first:
+      213: 6362458450352125093
+    second: PinkFireBall_1
+  - first:
+      213: -2580995957020874649
+    second: PinkFireBall_2
+  - first:
+      213: 2344324485094419752
+    second: PinkFireBall_3
+  - first:
+      213: 4497438429199393973
+    second: PinkFireBall_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +128,116 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PinkFireBall_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 6
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c782f661d8ad2ed20800000000000000
+      internalID: 3306445375944992892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkFireBall_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 8
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4bb67304efb4850800000000000000
+      internalID: 6362458450352125093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkFireBall_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 17
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7682d0f0ad57e2cd0800000000000000
+      internalID: -2580995957020874649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkFireBall_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 7
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dad4cc2b6b88020800000000000000
+      internalID: 2344324485094419752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkFireBall_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 9
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4ee934c6c1a6e30800000000000000
+      internalID: 4497438429199393973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 69c98fb31118a4144b5d2042c825adcd
     internalID: 0
     vertices: []
     indices: 
