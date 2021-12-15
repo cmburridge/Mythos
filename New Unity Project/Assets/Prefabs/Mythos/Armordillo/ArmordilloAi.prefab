@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142fe1ae25861004f8e621718c577835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisMythos: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
+  thisMythos: {fileID: 11400000, guid: bfd23896869391f4090eb07a3414221a, type: 2}
   data: {fileID: 11400000, guid: 332e7840e59f3984a80c75ed79b63400, type: 2}
   hurt1: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
   hurt2: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}

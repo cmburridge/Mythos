@@ -652,7 +652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3c8879224b1a243a2a5ccb4b11539c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisMythos: {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
+  thisMythos: {fileID: 11400000, guid: bc06fa7634cce7f4487751275b363b13, type: 2}
 --- !u!50 &4643595463385204187
 Rigidbody2D:
   serializedVersion: 4
