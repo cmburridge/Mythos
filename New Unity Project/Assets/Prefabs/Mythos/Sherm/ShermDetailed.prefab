@@ -95,7 +95,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4339066187361437841}
-  - component: {fileID: 8938406221469031656}
   m_Layer: 0
   m_Name: ShermDetailed
   m_TagString: Untagged
@@ -118,25 +117,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8938406221469031656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4339066187361437842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 142fe1ae25861004f8e621718c577835, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisMythos: {fileID: 11400000, guid: 1396bb6a0a5c5bf49bf373775286256c, type: 2}
-  data: {fileID: 0}
-  hurt1: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
-  hurt2: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
-  hurt3: {fileID: 21300000, guid: 53d4f4af54ebe9a40b352df182a27538, type: 3}
-  dead: {fileID: 21300000, guid: 23cfbfce7f73507458e513c85dd72ab4, type: 3}
-  prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!1 &4339066187516653583
 GameObject:
   m_ObjectHideFlags: 0

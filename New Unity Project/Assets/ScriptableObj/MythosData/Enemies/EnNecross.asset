@@ -29,7 +29,7 @@ MonoBehaviour:
   mythosName: Necross
   hp: 2
   maxHp: 2
-  speed: 2
+  speed: 1
   power: 9
   defense: 9
   special: {fileID: 2170230376149736571, guid: 0fb7a8cd8059c984ba7dd230c362af18, type: 3}

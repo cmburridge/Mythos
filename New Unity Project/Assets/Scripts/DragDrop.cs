@@ -21,7 +21,6 @@ public class DragDrop : MonoBehaviour
     public GameObject moveCheck;
     public GameObject spaceFill;
     public GameObject movePosition;
-    public GameObject undo;
     public GameObject attackCheck;
     public GameObject rangeCheck;
     
@@ -40,12 +39,12 @@ public class DragDrop : MonoBehaviour
 
     private void Start()
     {
+        thisMythos.hp = thisMythos.maxHp;
         cam = Camera.main;
         Draggable = true;
         thisMythos.canMove = true;
         thisMythos.collected = true;
         movement = thisMythos.speed;
-        thisMythos.hp = thisMythos.maxHp;
         thisMythos.canAttack = false;
         thisMythos.turnOver = false;
     }
@@ -122,7 +121,7 @@ public class DragDrop : MonoBehaviour
         
             moveCheck.SetActive(false);
             movePosition.SetActive(false);
-            undo.SetActive(true);
+            //undo.SetActive(true);
         
             moveCheck.transform.position = movePositionData.value;
             spaceFill.transform.position = movePositionData.value;
@@ -150,7 +149,7 @@ public class DragDrop : MonoBehaviour
 
     public void Undo()
     {
-        undo.SetActive(false);
+        //undo.SetActive(false);
         movement += 1;
         thisMythos.canMove = true;
         transform.position = positionData.value;

@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3c8879224b1a243a2a5ccb4b11539c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisMythos: {fileID: 11400000, guid: d8d35b92bacc5bb40abecc225a7235c6, type: 2}
+  thisMythos: {fileID: 11400000, guid: b7019249d6440ca4c8d4fdd5af157c30, type: 2}
 --- !u!50 &8869425663069042579
 Rigidbody2D:
   serializedVersion: 4

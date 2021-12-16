@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
+  m_Name: Runactanid
+  m_EditorClassIdentifier: 
+  onScreen: 0
+  collected: 0
+  character: {fileID: 2521807999009743460, guid: 5438b65b44f79c84da1c91a62d7a04bb, type: 3}
+  characterSelect: {fileID: 668926782960618122, guid: 023cd56749d0aaa42899a0cb3271cab8, type: 3}
+  characterDetails: {fileID: 6455800518568487287, guid: 12048ba5386bce947b201b2535c30d9e, type: 3}
+  characterFight: {fileID: 2321340972812332543, guid: 5837fc3f6b12370419bc16e9ed66a259, type: 3}
+  canMove: 0
+  canAttack: 0
+  turnOver: 1
+  turnStart: 0
+  charSprite: {fileID: 21300000, guid: 413df106b8cafff4d95f03f1871b7f58, type: 3}
+  charMenu: {fileID: 21300000, guid: 9b3ede92234ae624d9372d67cbb55b46, type: 3}
+  biome: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
+  attackIcon: {fileID: 0}
+  mythosName: Runactanid
+  hp: 3
+  maxHp: 3
+  speed: 2
+  power: 8
+  defense: 8
+  special: {fileID: 2040504032492331845, guid: 48c066b44fd81704a89b7852984007cb, type: 3}

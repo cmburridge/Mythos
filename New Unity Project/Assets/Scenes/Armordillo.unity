@@ -7103,7 +7103,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1132038126}
         m_TargetAssemblyTypeName: InstantiateBehavior, Assembly-CSharp
-        m_MethodName: SelectedFirst
+        m_MethodName: SelectedSecond
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

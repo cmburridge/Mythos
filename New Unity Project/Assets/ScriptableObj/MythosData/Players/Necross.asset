@@ -18,13 +18,13 @@ MonoBehaviour:
   characterSelect: {fileID: 648592996117395098, guid: aa896cf84f48bf548ade745e9cc329a3, type: 3}
   characterDetails: {fileID: 8979771331049167063, guid: 0f2403d7ecad9ce4196ce5ea13d26137, type: 3}
   characterFight: {fileID: 2637522074687746214, guid: eae85974608eb2d44ab9d830d837de04, type: 3}
-  canMove: 1
+  canMove: 0
   canAttack: 0
-  turnOver: 0
+  turnOver: 1
   turnStart: 0
-  charSprite: {fileID: 21300000, guid: ec65c757854fdcc42a35dd09d4cde710, type: 3}
+  charSprite: {fileID: 21300000, guid: 4be4d1661f265154f8fe84d6aa0b1c13, type: 3}
   charMenu: {fileID: 21300000, guid: 929fe2e6e8b92f7489586779f29ea7d3, type: 3}
-  biome: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
+  biome: {fileID: 21300000, guid: 274d4ea96470fef4280cb6c9237a22e0, type: 3}
   attackIcon: {fileID: 0}
   mythosName: Necross
   hp: 2

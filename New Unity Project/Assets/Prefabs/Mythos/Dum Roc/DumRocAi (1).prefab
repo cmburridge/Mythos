@@ -305,7 +305,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.60489786}
   serializedVersion: 2
-  m_Radius: 7.23226
+  m_Radius: 4.5148573
 --- !u!50 &6029767721059542147
 Rigidbody2D:
   serializedVersion: 4
@@ -497,7 +497,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7771167976911465315}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 8.494178, y: 15.372141, z: -37.1}
   m_LocalScale: {x: 1.3489363, y: 1.3489362, z: 1.3489362}
   m_Children:
@@ -752,7 +752,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.60489786}
   serializedVersion: 2
-  m_Radius: 7.23226
+  m_Radius: 4.533543
 --- !u!50 &7771167978463034435
 Rigidbody2D:
   serializedVersion: 4

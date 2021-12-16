@@ -85,7 +85,7 @@ public class AiSimple : MonoBehaviour
 
     private IEnumerator WaitTill()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSecondsRealtime(6);
         StartCoroutine(NextTurn());
     }
 
@@ -156,7 +156,7 @@ public class AiSimple : MonoBehaviour
 
     public IEnumerator NextTurn()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSecondsRealtime(1);
         nextEnemy.Invoke();
         movement = thisMythos.speed;
     }

@@ -95,12 +95,13 @@ public class BiomeChoose : MonoBehaviour
             enemyGroup.SetActive(true);
             button.SetActive(true);
             attackScene.SetActive(false);
+            yield break;
         }
     }
 
     public IEnumerator AiDefend()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSecondsRealtime(2);
         randomValue = Random.Range(1, 21);
         audio.Play();
         diceVal.text = randomValue.ToString();
@@ -117,6 +118,7 @@ public class BiomeChoose : MonoBehaviour
             enemyGroup.SetActive(true);
             button.SetActive(true);
             attackScene.SetActive(false);
+            yield break;
         }
         else if (randomValue >= target.defense)
         {
@@ -131,6 +133,7 @@ public class BiomeChoose : MonoBehaviour
             enemyGroup.SetActive(true);
             button.SetActive(true);
             attackScene.SetActive(false);
+            yield break;
         }
     }
 
@@ -143,7 +146,7 @@ public class BiomeChoose : MonoBehaviour
 
     public IEnumerator AiRoll()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSecondsRealtime(1);
         randomValue = Random.Range(1, 21);
         audio.Play();
         diceVal.text = randomValue.ToString();
@@ -166,12 +169,13 @@ public class BiomeChoose : MonoBehaviour
             enemyGroup.SetActive(true);
             button.SetActive(true);
             attackScene.SetActive(false);
+            yield break;
         }
     }
     
     public IEnumerator Defend()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSecondsRealtime(2);
         randomValue = Random.Range(1, 21);
         audio.Play();
         diceVal.text = randomValue.ToString();
@@ -188,6 +192,7 @@ public class BiomeChoose : MonoBehaviour
             enemyGroup.SetActive(true);
             button.SetActive(true);
             attackScene.SetActive(false);
+            yield break;
         }
         else if (randomValue >= team.defense)
         {
@@ -202,6 +207,7 @@ public class BiomeChoose : MonoBehaviour
             enemyGroup.SetActive(true);
             button.SetActive(true);
             attackScene.SetActive(false);
+            yield break;
         }
     }
 }

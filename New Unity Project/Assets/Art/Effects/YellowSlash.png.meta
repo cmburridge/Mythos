@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 525e25c3cba44a14ebabdc18756bc048
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5857066701287850297
+    second: YellowSlash_0
+  - first:
+      213: -3370114592653887317
+    second: YellowSlash_1
+  - first:
+      213: 8768670129722005693
+    second: YellowSlash_2
+  - first:
+      213: -5613346437157332609
+    second: YellowSlash_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +125,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: YellowSlash_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 46
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cef7f30ed487bea0800000000000000
+      internalID: -5857066701287850297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowSlash_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 30
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8318432a2fa31d0800000000000000
+      internalID: -3370114592653887317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowSlash_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 7
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db898aa460390b970800000000000000
+      internalID: 8768670129722005693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowSlash_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79580cf7236912b0800000000000000
+      internalID: -5613346437157332609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 99ab6fabb1e2ad84eb3d4a62cc367b87
     internalID: 0
     vertices: []
     indices: 

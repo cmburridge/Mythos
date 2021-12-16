@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
+  m_Name: EnGeckodon
+  m_EditorClassIdentifier: 
+  onScreen: 0
+  collected: 0
+  character: {fileID: 0}
+  characterSelect: {fileID: 0}
+  characterDetails: {fileID: 0}
+  characterFight: {fileID: 0}
+  canMove: 0
+  canAttack: 0
+  turnOver: 1
+  turnStart: 0
+  charSprite: {fileID: 21300000, guid: 35f6a20d8adbff34a8a830a2d72237c4, type: 3}
+  charMenu: {fileID: 21300000, guid: fa88ab4cc990cd34c9f986178b149e80, type: 3}
+  biome: {fileID: 21300000, guid: 72528fdb9d6525747a0cee5d5cd5884f, type: 3}
+  attackIcon: {fileID: 0}
+  mythosName: Geckodon
+  hp: 3
+  maxHp: 3
+  speed: 2
+  power: 10
+  defense: 6
+  special: {fileID: 6860142783810644863, guid: c4ad03b6b41cfc44299a3a2d936a52fb, type: 3}
