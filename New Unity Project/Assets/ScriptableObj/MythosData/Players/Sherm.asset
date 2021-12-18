@@ -18,18 +18,18 @@ MonoBehaviour:
   characterSelect: {fileID: 7248378720768168553, guid: 9b10742a17e7551439441a48ec8c7b2e, type: 3}
   characterDetails: {fileID: 4339066187361437842, guid: b218d6eff6171174c946b04f81a6aa60, type: 3}
   characterFight: {fileID: 6093512848704731278, guid: 5ea87f96a67c9084bb1d93cd287f321c, type: 3}
-  canMove: 1
+  canMove: 0
   canAttack: 1
   turnOver: 0
   turnStart: 0
   charSprite: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
   charMenu: {fileID: 21300000, guid: 82692ce4423f78d4a96f406f4d252a7f, type: 3}
-  biome: {fileID: 21300000, guid: 9748529a79a0b9e43ab95b5273073f05, type: 3}
+  biome: {fileID: 21300000, guid: 16a0574ab7ed9294bb04b9a2c7aadc0f, type: 3}
   attackIcon: {fileID: 0}
   mythosName: Sherm
   hp: 2
   maxHp: 2
   speed: 1
-  power: 7
+  power: 10
   defense: 8
   special: {fileID: 8214575510399149547, guid: 3c7656277e5cac3478750b639d18a99a, type: 3}

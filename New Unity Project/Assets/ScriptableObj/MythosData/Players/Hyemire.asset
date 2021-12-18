@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed585db11b742e48826ddac3e2a363d, type: 3}
   m_Name: Hyemire
   m_EditorClassIdentifier: 
-  onScreen: 0
+  onScreen: 1
   collected: 0
   character: {fileID: 9219200436343119643, guid: dba2db372e4d87a42a20eb0d54c29a2d, type: 3}
   characterSelect: {fileID: 3024341771534914812, guid: bf0f9a99a08d6eb46b119562f44fc0a8, type: 3}
@@ -30,6 +30,6 @@ MonoBehaviour:
   hp: 3
   maxHp: 3
   speed: 2
-  power: 12
+  power: 13
   defense: 6
   special: {fileID: 4206168545239884011, guid: 8829c8b8c7f703344b3fad7db85674e2, type: 3}

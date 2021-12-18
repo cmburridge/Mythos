@@ -23,4 +23,16 @@ public class SceneManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneBuildIndex: randomValue);
     }
+    
+    public void MainMenu()
+    {
+        Instantiate(transition,this.transform.position, Quaternion.identity);
+        StartCoroutine(ToMenu());
+    }
+
+    private IEnumerator ToMenu()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
 }
