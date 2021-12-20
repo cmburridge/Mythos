@@ -73,8 +73,8 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 332e7840e59f3984a80c75ed79b63400, type: 2}
   hurt1: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
   hurt2: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
-  hurt3: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
-  dead: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
+  hurt3: {fileID: 21300000, guid: c32fbc8f7095fe842a836301e1e90e91, type: 3}
+  dead: {fileID: 21300000, guid: c32fbc8f7095fe842a836301e1e90e91, type: 3}
   prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!50 &5225288331198951904
 Rigidbody2D:

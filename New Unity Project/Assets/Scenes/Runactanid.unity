@@ -179,6 +179,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 881212001}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1721457861}
   enemyNum: {fileID: 1245437364}
   diceVal: {fileID: 1370736971}
@@ -4025,6 +4037,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1478839683}
         m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
         m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 881212001}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15873,6 +15897,7 @@ MonoBehaviour:
   button: {fileID: 2028636087}
   thisMythos: {fileID: 11400000, guid: 74e3f38ac6a337044bd189ffa1b9e2e1, type: 2}
   collectionTeam: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
+  collectionAll: {fileID: 11400000, guid: 794ca6cce068b5d4fa84e521d2bde717, type: 2}
 --- !u!4 &1478839684
 Transform:
   m_ObjectHideFlags: 0
@@ -20272,6 +20297,8 @@ MonoBehaviour:
   opt2: 5
   randomValue: 0
   transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
+  all: {fileID: 11400000, guid: 794ca6cce068b5d4fa84e521d2bde717, type: 2}
+  collected: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
 --- !u!4 &1859113679
 Transform:
   m_ObjectHideFlags: 0

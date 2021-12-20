@@ -25,4 +25,9 @@ public class SpawnChar : MonoBehaviour
         Instantiate(collectableObj.characterDetails, location, Quaternion.identity, menu.gameObject.transform);
         icon.sprite = collectableObj.charSprite;
     }
+
+    public void UpdateIcons()
+    {
+        icon.sprite = collectableObj.charSprite;
+    }
 }

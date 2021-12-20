@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
@@ -24,15 +24,17 @@ public class InstantiateBehavior : MonoBehaviour
 
     private void Start()
     {
-        teamMythos.canAttack = false;
-        Spawn();
+        teamMythos.canAttack = false; 
+        StartCoroutine(Spawn());
     }
 
-    private void Spawn()
+    private IEnumerator Spawn()
     {
+        yield return new WaitForSeconds(1);
+        
         if (collectionFull.collection.Count <= 1)
         {
-            return;
+            yield break;
         }
         else
         {

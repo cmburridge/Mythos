@@ -1058,10 +1058,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisMythos: {fileID: 11400000, guid: bfd23896869391f4090eb07a3414221a, type: 2}
   data: {fileID: 11400000, guid: 332e7840e59f3984a80c75ed79b63400, type: 2}
-  hurt1: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
-  hurt2: {fileID: 21300000, guid: c8e5ab5fd7920334db02fa61e8e2264d, type: 3}
-  hurt3: {fileID: 21300000, guid: 53d4f4af54ebe9a40b352df182a27538, type: 3}
-  dead: {fileID: 21300000, guid: 23cfbfce7f73507458e513c85dd72ab4, type: 3}
+  hurt1: {fileID: 21300000, guid: 26786527ab7058b41a13b34e0f4a5ca9, type: 3}
+  hurt2: {fileID: 21300000, guid: eb1d2ad628887da41849250b12f02738, type: 3}
+  hurt3: {fileID: 21300000, guid: 7d22bbeede9a7f74a8d1809b6a00d602, type: 3}
+  dead: {fileID: 21300000, guid: 7d22bbeede9a7f74a8d1809b6a00d602, type: 3}
   prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!50 &5199352416114704360
 Rigidbody2D:

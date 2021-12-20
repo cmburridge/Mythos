@@ -1200,9 +1200,9 @@ MonoBehaviour:
   thisMythos: {fileID: 11400000, guid: af88669f3dab08a4586a791b5c393a13, type: 2}
   data: {fileID: 11400000, guid: e5c55dce87fb4c147b67bdb78ac1d9a2, type: 2}
   hurt1: {fileID: 21300000, guid: 13752b4f6d7d35544b1ccee6cfdd42cb, type: 3}
-  hurt2: {fileID: 21300000, guid: aeba091f49660c74ea40dbde101ec2af, type: 3}
-  hurt3: {fileID: 21300000, guid: fa49dd38059e6b84c931cc9f1f301489, type: 3}
-  dead: {fileID: 21300000, guid: fa49dd38059e6b84c931cc9f1f301489, type: 3}
+  hurt2: {fileID: 21300000, guid: 13752b4f6d7d35544b1ccee6cfdd42cb, type: 3}
+  hurt3: {fileID: 21300000, guid: aeba091f49660c74ea40dbde101ec2af, type: 3}
+  dead: {fileID: 21300000, guid: aeba091f49660c74ea40dbde101ec2af, type: 3}
   prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!82 &4450817406093639038
 AudioSource:

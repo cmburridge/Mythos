@@ -30,6 +30,6 @@ MonoBehaviour:
   hp: 3
   maxHp: 3
   speed: 2
-  power: 13
-  defense: 6
+  power: 12
+  defense: 7
   special: {fileID: 6860142783810644863, guid: c4ad03b6b41cfc44299a3a2d936a52fb, type: 3}

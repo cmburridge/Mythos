@@ -295,7 +295,6 @@ MonoBehaviour:
   moveCheck: {fileID: 1730149615101325845}
   spaceFill: {fileID: 8173357637014549856}
   movePosition: {fileID: 1730149615158559314}
-  undo: {fileID: 8355167955994509625}
   attackCheck: {fileID: 7651113247063150324}
   rangeCheck: {fileID: 2228363567569491698}
   thisMythos: {fileID: 11400000, guid: 34698d65e5f5e324393347c197985910, type: 2}
@@ -376,8 +375,8 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: e5c55dce87fb4c147b67bdb78ac1d9a2, type: 2}
   hurt1: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
   hurt2: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
-  hurt3: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
-  dead: {fileID: 21300000, guid: 36889ec9ac8f52c41a4d104721d49c54, type: 3}
+  hurt3: {fileID: 21300000, guid: c32fbc8f7095fe842a836301e1e90e91, type: 3}
+  dead: {fileID: 21300000, guid: c32fbc8f7095fe842a836301e1e90e91, type: 3}
   prefab: {fileID: 5613924205333291598, guid: cf2dcba242d8c3c4486163ee6525c442, type: 3}
 --- !u!82 &2117859278395180094
 AudioSource:

@@ -15,6 +15,7 @@ public class WinCondition : MonoBehaviour
     public GameObject button;
     public Collectable thisMythos;
     public Collections collectionTeam;
+    public Collections collectionAll;
 
     private void Start()
     {
@@ -24,7 +25,14 @@ public class WinCondition : MonoBehaviour
 
     public void AddNew()
     {
+        StartCoroutine(New());
+    }
+
+    private IEnumerator New()
+    {
+        yield return new WaitForSeconds(1);
         collectionTeam.collection.Add(thisMythos);
+        collectionAll.collection.Add(thisMythos);
     }
 
     public void EndMatch()

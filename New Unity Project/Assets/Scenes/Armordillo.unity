@@ -1608,6 +1608,7 @@ MonoBehaviour:
   button: {fileID: 1028953066}
   thisMythos: {fileID: 11400000, guid: 3c77032e6d83d8548af2231bf37b1ada, type: 2}
   collectionTeam: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
+  collectionAll: {fileID: 11400000, guid: 794ca6cce068b5d4fa84e521d2bde717, type: 2}
 --- !u!4 &243964464
 Transform:
   m_ObjectHideFlags: 0
@@ -8283,10 +8284,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 929304258}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 11400000, guid: 09f76236582826148829cba6b6ed997b, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8295,10 +8296,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 09f76236582826148829cba6b6ed997b, type: 2}
-        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
-        m_MethodName: SetListData
-        m_Mode: 1
+      - m_Target: {fileID: 929304258}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9747,6 +9748,8 @@ MonoBehaviour:
   opt2: 6
   randomValue: 0
   transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
+  all: {fileID: 11400000, guid: 794ca6cce068b5d4fa84e521d2bde717, type: 2}
+  collected: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
 --- !u!4 &1033376518
 Transform:
   m_ObjectHideFlags: 0
@@ -12873,6 +12876,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1478362617}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1789360449}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1707334515}
   enemyNum: {fileID: 503932683}
   diceVal: {fileID: 1815179704}
@@ -13987,6 +14014,30 @@ MonoBehaviour:
       - m_Target: {fileID: 243964463}
         m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
         m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1478362617}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1789360449}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16974,10 +17025,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1817396114}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 11400000, guid: 09f76236582826148829cba6b6ed997b, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16986,10 +17037,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 09f76236582826148829cba6b6ed997b, type: 2}
-        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
-        m_MethodName: SetListData
-        m_Mode: 1
+      - m_Target: {fileID: 1817396114}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

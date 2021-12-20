@@ -10,6 +10,9 @@ public class SceneManager : MonoBehaviour
     public int opt2;
     public int randomValue;
     public GameObject transition;
+    public Collections all;
+    public Collections collected;
+    
     
     public void SceneSelect()
     {
@@ -17,7 +20,7 @@ public class SceneManager : MonoBehaviour
         Instantiate(transition,this.transform.position, Quaternion.identity);
         StartCoroutine(SceneOpt());
     }
-
+    
     private IEnumerator SceneOpt()
     {
         yield return new WaitForSecondsRealtime(1);
@@ -27,6 +30,8 @@ public class SceneManager : MonoBehaviour
     public void MainMenu()
     {
         Instantiate(transition,this.transform.position, Quaternion.identity);
+        collected.collection.Clear();
+        collected.collection.AddRange(all.collection);
         StartCoroutine(ToMenu());
     }
 

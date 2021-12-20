@@ -2552,6 +2552,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 500435720}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288538588}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1612460735}
   enemyNum: {fileID: 1709827303}
   diceVal: {fileID: 41866462}
@@ -6034,6 +6058,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 500435720}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288538588}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   teamNum: {fileID: 1983521101}
   enemyNum: {fileID: 1273690394}
   diceVal: {fileID: 591994315}
@@ -9126,6 +9174,7 @@ MonoBehaviour:
   button: {fileID: 1730329111}
   thisMythos: {fileID: 11400000, guid: c904647001b7a7d40b3fd8bdfa084423, type: 2}
   collectionTeam: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
+  collectionAll: {fileID: 11400000, guid: 794ca6cce068b5d4fa84e521d2bde717, type: 2}
 --- !u!4 &736195793
 Transform:
   m_ObjectHideFlags: 0

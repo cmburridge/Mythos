@@ -4388,7 +4388,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1666144486}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: SceneSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6203,6 +6203,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1031701868}
         m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
         m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 912855160}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9226,6 +9238,7 @@ MonoBehaviour:
   button: {fileID: 1670449255}
   thisMythos: {fileID: 11400000, guid: f5093e3eb445e6c428dbac364eb7084a, type: 2}
   collectionTeam: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
+  collectionAll: {fileID: 11400000, guid: 794ca6cce068b5d4fa84e521d2bde717, type: 2}
 --- !u!4 &1031701869
 Transform:
   m_ObjectHideFlags: 0
@@ -9287,6 +9300,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1031701868}
         m_TargetAssemblyTypeName: WinCondition, Assembly-CSharp
         m_MethodName: EndMatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 912855160}
+        m_TargetAssemblyTypeName: SpawnChar, Assembly-CSharp
+        m_MethodName: UpdateIcons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14904,7 +14929,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1666144486}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: SceneSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15165,6 +15190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1666144487}
   - component: {fileID: 1666144486}
+  - component: {fileID: 1666144488}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -15188,6 +15214,8 @@ MonoBehaviour:
   opt2: 5
   randomValue: 0
   transition: {fileID: 2689803875330018655, guid: d6e8917f1539e6f408ff8cd8095514d6, type: 3}
+  all: {fileID: 11400000, guid: 794ca6cce068b5d4fa84e521d2bde717, type: 2}
+  collected: {fileID: 11400000, guid: 14753cd1e030cf744b99cc27bd421a5b, type: 2}
 --- !u!4 &1666144487
 Transform:
   m_ObjectHideFlags: 0
@@ -15202,6 +15230,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1666144488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666144485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032244cbb0c9a5b4ebc1adecedd3d727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: {fileID: 11400000, guid: 3a2f9186c33911d4f8052a5926dc1e4c, type: 2}
 --- !u!1 &1670449255
 GameObject:
   m_ObjectHideFlags: 0
