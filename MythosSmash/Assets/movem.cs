@@ -1,47 +1,80 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class movem : MonoBehaviour
 {
-    public float acceleration;
-    public float deceleration;
-    public float gravity;
+    private Rigidbody2D rb;
+    public float speed;
+    public float jumpForce;
+    private float moveInput;
 
-    public Vector3 constraint;
- 
-    private Rigidbody2D physics;
-    private Vector2 input;
- 
-    public void Start() 
+    private bool isGrounded;
+    public Transform feetPos;
+    public float checkRadius;
+    public LayerMask whatIsGround;
+
+    private float jumpTimeCounter;
+    public float jumpTime;
+    private bool isJumping;
+    public float jumpCount;
+    public float jumpCountMax;
+    
+    
+    private void Start()
     {
-        physics = GetComponent<Rigidbody2D>();
-        physics.gravityScale = gravity;
-        physics.drag = deceleration;
+        rb = GetComponent<Rigidbody2D>();
     }
- 
-    public void Update() 
-    {
-        input.x = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.W))
+    private void FixedUpdate()
+    {
+        moveInput = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+    }
+
+    private void Update()
+    {
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+
+        if (moveInput > 0)
         {
-            input.y = Input.GetAxis("Vertical");
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
-    }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        
+        if (isGrounded == true)
+        {
+            jumpCount = jumpCountMax;
+        }
+        
+        if (jumpCount > 0 == true && Input.GetKeyDown(KeyCode.W))
+        {
+            isJumping = true;
+            jumpTimeCounter = jumpTime;
+            rb.velocity = Vector2.up * jumpForce;
+        }
 
-    public void IsGrounded()
-    {
-        physics.gravityScale = 0;
-        input.y = Input.GetAxis("Vertical");
-    }
-    
-    public void NotGrounded()
-    {
-        physics.gravityScale = gravity;
-    }
-    
-    public void FixedUpdate() {
-        physics.AddForce(input * acceleration * Time.deltaTime, ForceMode2D.Impulse);
+        if (Input.GetKey(KeyCode.W) && isJumping == true && jumpCount > 0)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                rb.velocity = Vector2.up * jumpForce;
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            jumpCount -= 1;
+            isJumping = false;
+        }
     }
 }

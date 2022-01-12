@@ -10,9 +10,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/GroundCheck.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="23XNLPVrcpVbPbpMpQkBkQfJjjr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641876424743</updated>
-      <workItem from="1641876441677" duration="3360000" />
+      <workItem from="1641876441677" duration="6869000" />
     </task>
     <servers />
   </component>
